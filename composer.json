@@ -17,6 +17,7 @@
         "laravel/framework": "^7.0",
         "laravel/passport": "^8.4",
         "laravel/tinker": "^2.0",
+        "laravel/ui": "^2.0",
         "zircote/swagger-php": "2.*"
     },
     "require-dev": {
