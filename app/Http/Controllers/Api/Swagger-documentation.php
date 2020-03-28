@@ -81,7 +81,7 @@ class Swagger extends Controller
     }
     /**
  * @SWG\PUT(
- *     path="/movie",
+ *     path="/movie/{id}",
  *      tags={"Movie"},
  *     description="Return a Movie",
  *      summary="Update Movie",
@@ -132,7 +132,7 @@ class Swagger extends Controller
  */
 /**
  * @SWG\DELETE(
- *   path="/movies",
+ *   path="/movies/{id}",
  *  tags={"Movie"},
  *   summary="Delete Movies ",
  *   @SWG\Response(response=200, description="successful operation")

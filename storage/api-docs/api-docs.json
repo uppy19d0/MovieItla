@@ -18,20 +18,63 @@
                         "description": "successful operation"
                     }
                 }
-            },
-            "delete": {
+            }
+        },
+        "/movie": {
+            "post": {
                 "tags": [
                     "Movie"
                 ],
-                "summary": "Delete Movies ",
+                "summary": "Create new Movie",
+                "description": "Return a Movie",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "description": "The title of movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "in": "query",
+                        "description": "The description of movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "query",
+                        "description": "The link of image",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "link_trailer",
+                        "in": "query",
+                        "description": "The link of youtube to movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "launcher",
+                        "in": "query",
+                        "description": "The launcher of movie",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
                 "responses": {
                     "200": {
-                        "description": "successful operation"
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "ALL DATA IS REQUERID"
                     }
                 }
             }
         },
-        "/movie": {
+        "/movie/{id}": {
             "put": {
                 "tags": [
                     "Movie"
@@ -83,56 +126,17 @@
                         "description": "ALL DATA IS REQUERID"
                     }
                 }
-            },
-            "post": {
+            }
+        },
+        "/movies/{id}": {
+            "delete": {
                 "tags": [
                     "Movie"
                 ],
-                "summary": "Create new Movie",
-                "description": "Return a Movie",
-                "parameters": [
-                    {
-                        "name": "title",
-                        "in": "query",
-                        "description": "The title of movie",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "description",
-                        "in": "query",
-                        "description": "The description of movie",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "image",
-                        "in": "query",
-                        "description": "The link of image",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "link_trailer",
-                        "in": "query",
-                        "description": "The link of youtube to movie",
-                        "required": true,
-                        "type": "string"
-                    },
-                    {
-                        "name": "launcher",
-                        "in": "query",
-                        "description": "The launcher of movie",
-                        "required": true,
-                        "type": "string"
-                    }
-                ],
+                "summary": "Delete Movies ",
                 "responses": {
                     "200": {
-                        "description": "OK"
-                    },
-                    "400": {
-                        "description": "ALL DATA IS REQUERID"
+                        "description": "successful operation"
                     }
                 }
             }
