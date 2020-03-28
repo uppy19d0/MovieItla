@@ -2,70 +2,30 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Movie;
+use App\Http\Controllers;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group([
+    'prefix' => 'v1', 
+    'as' => 'api.', 
+    'namespace' => 'Api\V1\Admin', 
+    'middleware' => ['auth:api']
+],function(){
 //endpoint to List of all movie
-Route::get('movies',function(){
-$movies = Movie::get();
-return $movies;
-});
+Route::get('movies','MovieController@show_all');
 
 // endpoint to information epefici of one movie
-Route::get('movie/{id}',function($id){
-    $movie = Movie::findOrFail($id);
-    return $movie;
-});
+Route::get('movie/{id}','MovieController@show_id');
 
 // endpoint to create movie
-Route::post('movie',function(Request $request){
-$request->validate([
-    'title'=>'required',
-    'description'=>'required',
-    'image'=>'required',
-    'link_trailer'=>'required',
-    'launcher'=>'required',
-    ]);
-$movie = new Movie;
-$movie->title = $request->input('title');
-$movie->description = $request->input('description');
-$movie->category = $request->input('category');
-$movie->image = $request->input('image');
-$movie->link_trailer = $request->input('link_trailer');
-$movie->launcher = $request->input('launcher');
-$movie-> save();
-return "PELICULA CREADA";
-});
+Route::post('movie','MovieController@create');
 
 // endpoint to put movie
-Route::put('movie/{id}',function(Request $request,$id){
-    $request->validate([
-        'title'=>'required',
-        'description'=>'required',
-        'image'=>'required',
-        'link_trailer'=>'required',
-        'launcher'=>'required',
-        ]);
-    $movie = Movie::findOrFail($id);
-    $movie->title = $request->input('title');
-    $movie->description = $request->input('description');
-    $movie->category = $request->input('category');
-    $movie->image = $request->input('image');
-    $movie->link_trailer = $request->input('link_trailer');
-    $movie->launcher = $request->input('launcher');
-    $movie-> save();
-    return "Pelicular Actualizada";
-});
+Route::put('movie/{id}','MovieController@update');
 
-// endpoint to remove element 
-Route::delete('movie/{id}',function($id){
-    $movie = Movie::findOrFail($id);
-    if($movie)
-       $movie->delete(); 
-    else
-        return response()->json('no exist');
-    return response()->json(null); 
+// endpoint to put delete movie
+Route::put('movie/{id}','MovieController@delete');
 });
-

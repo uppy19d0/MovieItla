@@ -1,0 +1,142 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "API Movie Itla 2020",
+        "description": "Create for Luis Aneuris Tavarez ",
+        "version": "1.0.0"
+    },
+    "basePath": "/api",
+    "paths": {
+        "/movies": {
+            "get": {
+                "tags": [
+                    "Movie"
+                ],
+                "summary": "Movies list ",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "Movie"
+                ],
+                "summary": "Delete Movies ",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        },
+        "/movie": {
+            "put": {
+                "tags": [
+                    "Movie"
+                ],
+                "summary": "Update Movie",
+                "description": "Return a Movie",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "description": "The title of movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "in": "query",
+                        "description": "The description of movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "query",
+                        "description": "The link of image",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "link_trailer",
+                        "in": "query",
+                        "description": "The link of youtube to movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "launcher",
+                        "in": "query",
+                        "description": "The launcher of movie",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "ALL DATA IS REQUERID"
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "Movie"
+                ],
+                "summary": "Create new Movie",
+                "description": "Return a Movie",
+                "parameters": [
+                    {
+                        "name": "title",
+                        "in": "query",
+                        "description": "The title of movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "description",
+                        "in": "query",
+                        "description": "The description of movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "image",
+                        "in": "query",
+                        "description": "The link of image",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "link_trailer",
+                        "in": "query",
+                        "description": "The link of youtube to movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "launcher",
+                        "in": "query",
+                        "description": "The launcher of movie",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    },
+                    "400": {
+                        "description": "ALL DATA IS REQUERID"
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {}
+}
