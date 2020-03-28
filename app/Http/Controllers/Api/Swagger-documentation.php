@@ -140,6 +140,17 @@ class Swagger extends Controller
  *
  * Display a listing of the resource.
  *
+ */
+/**
+ * @SWG\Get(
+ *   path="/movie/{id}",
+ *  tags={"Movie"},
+ *   summary="Get Movies Id",
+ *   @SWG\Response(response=200, description="successful operation")
+ * )
+ *
+ * Display a listing of the resource.
+ *
  * @return \Illuminate\Http\Response
  */
  }

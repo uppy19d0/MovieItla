@@ -75,6 +75,17 @@
             }
         },
         "/movie/{id}": {
+            "get": {
+                "tags": [
+                    "Movie"
+                ],
+                "summary": "Get Movies Id",
+                "responses": {
+                    "200": {
+                        "description": "successful operation"
+                    }
+                }
+            },
             "put": {
                 "tags": [
                     "Movie"
