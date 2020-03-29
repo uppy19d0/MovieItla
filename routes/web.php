@@ -20,3 +20,9 @@ use Illuminate\Support\Facades\Route;
 Route::view('/','movies');
 // Route::view('/movie','h')
 
+
+// Route::group([
+//     'prefix'     => config('admin.route.prefix'),
+//     'namespace'  => 'Tests\Controllers',
+//     'middleware' => ['web', 'admin'],
+// ]);
