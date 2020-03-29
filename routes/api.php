@@ -8,12 +8,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group([
-    'prefix' => 'v1', 
-    'as' => 'api.', 
-    'namespace' => 'Api\V1\Admin', 
-    'middleware' => ['auth:api']
-],function(){
+
 //endpoint to List of all movie
 Route::get('movies','MovieController@show_all');
 
@@ -27,5 +22,4 @@ Route::post('movie','MovieController@create');
 Route::put('movie/{id}','MovieController@update');
 
 // endpoint to put delete movie
-Route::put('movie/{id}','MovieController@delete');
-});
+Route::delete('movie/{id}','MovieController@delete');

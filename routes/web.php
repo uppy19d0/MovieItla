@@ -17,4 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('app');
 // });
 
-Route::view('/','app');
+Route::view('/','movies');
+// Route::view('/movie','h')
+
