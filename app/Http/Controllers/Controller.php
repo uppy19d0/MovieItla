@@ -14,7 +14,7 @@ class Controller extends BaseController
  *   basePath="/api",
  *   @SWG\Info(
  *     title="API Movie Itla 2020",
- *     description="Create for Luis Aneuris Tavarez ",
+ *     description="<h3><kbd> <b>Create for Luis Aneuris Tavarez</b></kbd></h3>",
  *     version="1.0.0",
  *   )
  * )

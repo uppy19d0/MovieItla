@@ -6,8 +6,8 @@
                 </div>
                 <div class="links">
                     <a href="">Contacto</a>
-                    <a href="">Information</a>
-                    <a href="" class="flex-container">Admin</a>
+                    <a href="http://localhost:8000/api/documentation">Documentation Api</a>
+                    <a href="http://localhost:8000/admin">Admin</a>
                 </div>
             </div>
         </div>
@@ -46,7 +46,7 @@
         .links > a {
             color: #830a0a;
             padding: 0 25px;
-            font-size: 12px;
+            font-size: 23px;
             font-weight: 600;
             letter-spacing: .1rem;
             text-decoration: none;

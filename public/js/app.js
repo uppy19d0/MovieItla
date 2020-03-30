@@ -5941,7 +5941,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nhtml[data-v-1f42fb90], body[data-v-1f42fb90] {\n    background-color: rgb(179, 144, 144);\n    color: #044668;\n    font-family: 'Raleway', sans-serif;\n    font-weight: 100;\n    height: 100vh;\n    margin: 0;\n}\n.top-right[data-v-1f42fb90] {\n    position: absolute;\n    right: 10px;\n    top: 18px;\n}\n.content[data-v-1f42fb90] {\n    text-align: center;\n}\n.title[data-v-1f42fb90] {\n    font-size: 84px;\n}\n.links > a[data-v-1f42fb90] {\n    color: #830a0a;\n    padding: 0 25px;\n    font-size: 12px;\n    font-weight: 600;\n    letter-spacing: .1rem;\n    text-decoration: none;\n    text-transform: uppercase;\n}\n.m-b-md[data-v-1f42fb90] {\n    margin-bottom: 30px;\n}\ndiv.color[data-v-1f42fb90]{\n    background-color: #568d88;\n    border:solid\n}\n*[data-v-1f42fb90]{\nmargin: 0px;\npadding: 0px;\n}\n\n", ""]);
+exports.push([module.i, "\nhtml[data-v-1f42fb90], body[data-v-1f42fb90] {\n    background-color: rgb(179, 144, 144);\n    color: #044668;\n    font-family: 'Raleway', sans-serif;\n    font-weight: 100;\n    height: 100vh;\n    margin: 0;\n}\n.top-right[data-v-1f42fb90] {\n    position: absolute;\n    right: 10px;\n    top: 18px;\n}\n.content[data-v-1f42fb90] {\n    text-align: center;\n}\n.title[data-v-1f42fb90] {\n    font-size: 84px;\n}\n.links > a[data-v-1f42fb90] {\n    color: #830a0a;\n    padding: 0 25px;\n    font-size: 23px;\n    font-weight: 600;\n    letter-spacing: .1rem;\n    text-decoration: none;\n    text-transform: uppercase;\n}\n.m-b-md[data-v-1f42fb90] {\n    margin-bottom: 30px;\n}\ndiv.color[data-v-1f42fb90]{\n    background-color: #568d88;\n    border:solid\n}\n*[data-v-1f42fb90]{\nmargin: 0px;\npadding: 0px;\n}\n\n", ""]);
 
 // exports
 
@@ -37480,9 +37480,11 @@ var staticRenderFns = [
     return _c("div", { staticClass: "links" }, [
       _c("a", { attrs: { href: "" } }, [_vm._v("Contacto")]),
       _vm._v(" "),
-      _c("a", { attrs: { href: "" } }, [_vm._v("Information")]),
+      _c("a", { attrs: { href: "http://localhost:8000/api/documentation" } }, [
+        _vm._v("Documentation Api")
+      ]),
       _vm._v(" "),
-      _c("a", { staticClass: "flex-container", attrs: { href: "" } }, [
+      _c("a", { attrs: { href: "http://localhost:8000/admin" } }, [
         _vm._v("Admin")
       ])
     ])
