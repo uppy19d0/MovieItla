@@ -3,8 +3,8 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-require('./bootstrap');
-window.Vue = require('vue');
+require("./bootstrap");
+window.Vue = require("vue");
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -14,8 +14,8 @@ window.Vue = require('vue');
  */
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-Vue.component('header-component', require('./components/Header.vue').default);
-Vue.component('movie-component', require('./components/Movie.vue').default);
+Vue.component("header-component", require("./components/Header.vue").default);
+Vue.component("movies-component", require("./components/Movies.vue").default);
 // Vue.component('page', require('./components/Page.vue'));
 // Vue.component('home-component', require('./components/Home.vue').default);
 /**
@@ -24,5 +24,5 @@ Vue.component('movie-component', require('./components/Movie.vue').default);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 const app = new Vue({
-    el: '#app',
+    el: "#app"
 });

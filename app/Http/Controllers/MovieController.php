@@ -36,7 +36,7 @@ class MovieController extends Controller
         $movie->link_trailer = $request->input('link_trailer');
         $movie->launcher = $request->input('launcher');
         $movie-> save();
-        return "PELICULA CREADA";
+        return $movie;
         }
         public function update(Request $request , $id){
             $request->validate([
@@ -54,7 +54,7 @@ class MovieController extends Controller
             $movie->link_trailer = $request->input('link_trailer');
             $movie->launcher = $request->input('launcher');
             $movie-> save();
-            return "Pelicular Actualizada";
+            return $movie;
     }
     public function delete($id){
         $movie = Movie::findOrFail($id);
