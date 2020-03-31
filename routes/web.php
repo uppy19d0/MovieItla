@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('app');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::view('/','movies');
+Route::view('/movies','movies');
 // Route::view('/movie','h')
 
 
