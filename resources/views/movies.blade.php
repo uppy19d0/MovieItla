@@ -13,15 +13,24 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-xs-8 col-xs-offset-2">
+            <div class="otro col-xs-8 col-xs-offset-2">
                 <div id="app">
-                    <header-component title="Pirates" secondt="Movies"></header-component>
-                    <movies-component></movies-component>
+                    <header-component class="cp" title="WATCH MOVIES"></header-component>
+                    <movies-component ></movies-component>
                 </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="js/app.js"></script>
+<style type="text/css">
+   body{ background-image: url(/assets/fondo.jpg) ;
+   }
+
+   .app {
+       background-color: #010101;   
+   }
+    </style>
+
 </body>
 
 </html>

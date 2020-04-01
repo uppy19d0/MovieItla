@@ -1960,6 +1960,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["title", "secondt"]
 });
@@ -1977,12 +1980,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(process) {/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -6700,10 +6697,10 @@ __webpack_require__.r(__webpack_exports__);
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
-exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Karla|Pirata+One&display=swap);", ""]);
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Karla|Oswald&display=swap);", ""]);
 
 // module
-exports.push([module.i, "\n.title[data-v-1f42fb90],\r\n.logo[data-v-1f42fb90] {\r\n    display: inline;\n}\n.title[data-v-1f42fb90],\r\n.links[data-v-1f42fb90] {\r\n    display: inline-block;\r\n    vertical-align: middle;\n}\n.title[data-v-1f42fb90] {\r\n    font-size: 40px;\r\n    font-family: \"Pirata One\", cursive;\r\n    margin: 0 400px 0 0px;\r\n    padding-left: 10px;\n}\n.logo[data-v-1f42fb90] {\r\n    height: 64px;\r\n    width: 64px;\n}\n.links > a[data-v-1f42fb90] {\r\n    color: #000;\r\n    padding: 0 25px;\r\n    font-size: 20px;\r\n    font-weight: 200;\r\n    text-decoration: none;\r\n    font-family: \"Karla\", sans-serif;\n}\n.m-b-md[data-v-1f42fb90] {\r\n    margin-bottom: 30px;\n}\n*[data-v-1f42fb90] {\r\n    margin: 0px;\r\n    padding: 0px;\n}\r\n", ""]);
+exports.push([module.i, "\n.title[data-v-1f42fb90],\r\n.logo[data-v-1f42fb90] {\r\n    margin-top: 20px;\r\n    display: inline-block;\n}\n.title[data-v-1f42fb90],\r\n.links[data-v-1f42fb90] {\r\n    display: inline;\r\n    vertical-align: middle;\n}\n.title[data-v-1f42fb90] {\r\n    font-size: 40px;\r\n    font-family: \"Oswald\", sans-serif;\r\n    margin: 0 200px 0 0px;\r\n    padding-left: 10px;\r\n    color: white;\n}\n.logo[data-v-1f42fb90] {\r\n    height: 64px;\r\n    width: 64px;\n}\n.links > a[data-v-1f42fb90] {\r\n    color: #000;\r\n    padding: 0 25px;\r\n    font-size: 20px;\r\n    font-weight: 200;\r\n    text-decoration: none;\r\n    font-family: \"Karla\", sans-serif;\r\n    color: white;\n}\n.m-b-md[data-v-1f42fb90] {\r\n    margin-bottom: 30px;\n}\n*[data-v-1f42fb90] {\r\n    margin: 0px;\r\n    padding: 0px;\n}\r\n", ""]);
 
 // exports
 
@@ -6722,7 +6719,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container[data-v-0e7ffbee] {\r\n    background-color: #fff;\n}\n.page-item.active .page-link[data-v-0e7ffbee] {\r\n    background: #55595c;\n}\n.page-link[data-v-0e7ffbee] {\r\n    color: #55595c;\n}\n.box-movie[data-v-0e7ffbee] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-0e7ffbee] {\r\n    display: inline-block;\n}\n.card[data-v-0e7ffbee] {\r\n    /* background-color: #1d1a26;*/\r\n\r\n    color: #000;\n}\n.card-body h4[data-v-0e7ffbee] {\r\n    margin-left: 20px;\n}\n.container .card[data-v-0e7ffbee] {\r\n    margin-left: 20px;\n}\n.card-img-top[data-v-0e7ffbee] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
+exports.push([module.i, "\n.main[data-v-0e7ffbee],\r\nnav[data-v-0e7ffbee],\r\n.cardc[data-v-0e7ffbee],\r\n.mov[data-v-0e7ffbee],\r\n.row[data-v-0e7ffbee],\r\n.row2[data-v-0e7ffbee],\r\n.page-item[data-v-0e7ffbee] {\r\n    background-color: #1d1a26;\n}\nhr[data-v-0e7ffbee] {\r\n    background-color: #242e37;\n}\n.page-item.active .page-link[data-v-0e7ffbee] {\r\n    background: #55595c;\n}\n.page-link[data-v-0e7ffbee] {\r\n    color: #55595c;\n}\n.box-movie[data-v-0e7ffbee] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-0e7ffbee] {\r\n    display: inline-block;\n}\n.card-button img[data-v-0e7ffbee] {\r\n    height: 10px;\r\n    width: 10px;\n}\n.mov[data-v-0e7ffbee] {\r\n    background-color: #1d1a26;\r\n    color: #fff;\n}\n.card-category[data-v-0e7ffbee] {\r\n    color: #756a6a;\r\n    margin: -15px 0 20px 0;\n}\n.card-button a[data-v-0e7ffbee] {\r\n    font-size: 13px;\r\n    text-decoration: none;\n}\n.card-img-top[data-v-0e7ffbee] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
 
 // exports
 
@@ -38276,15 +38273,13 @@ var render = function() {
       _c("img", {
         staticClass: "logo",
         attrs: {
-          src: "https://image.flaticon.com/icons/svg/68/68207.svg",
+          src: "https://image.flaticon.com/icons/svg/747/747965.svg",
           alt: ""
         }
       }),
       _vm._v(" "),
       _c("div", { staticClass: "title m-b-md" }, [
-        _vm._v("\n            " + _vm._s(_vm.title) + " "),
-        _c("br"),
-        _vm._v("\n            " + _vm._s(_vm.secondt) + "\n        ")
+        _vm._v("\n            " + _vm._s(_vm.title) + "\n        ")
       ]),
       _vm._v(" "),
       _vm._m(0)
@@ -38354,67 +38349,58 @@ var render = function() {
                     }),
                 _vm._v(" "),
                 _c("div", { staticClass: "card-body" }, [
-                  _c("div", [
-                    _c("h4", [
+                  _c("div", { staticClass: "card-title" }, [
+                    _c("h3", [
                       _vm._v(
                         "\n                                    " +
                           _vm._s(movie.title) +
                           "\n                                "
                       )
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "container" }, [
-                      _c("div", { staticClass: "card" }, [
-                        _vm._v(
-                          "\n                                        " +
-                            _vm._s(movie.category) +
-                            "\n                                    "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        { staticClass: "card" },
-                        [
-                          _c(
-                            "b-button",
-                            {
-                              staticClass: "btn btn-ghost-primary",
-                              attrs: {
-                                variant: "outline-primary",
-                                type: "button"
-                              }
-                            },
-                            [
-                              _c(
-                                "a",
-                                {
-                                  attrs: {
-                                    href: "" + movie.link_trailer,
-                                    target: "_blank"
-                                  }
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                                Ver Trailer\n                                            "
-                                  )
-                                ]
-                              )
-                            ]
-                          )
-                        ],
-                        1
-                      )
                     ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-category" }, [
+                    _vm._v(
+                      "\n                                " +
+                        _vm._s(movie.category) +
+                        "\n                            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-button" }, [
+                    _c(
+                      "button",
+                      { staticClass: "btn btn-outline-info btn-sm" },
+                      [
+                        _c("img", {
+                          attrs: { src: "/assets/jugar.png", alt: "" }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "" + movie.link_trailer,
+                              target: "_blank"
+                            }
+                          },
+                          [
+                            _vm._v(
+                              "\n                                        VER TRAILER\n                                    "
+                            )
+                          ]
+                        )
+                      ]
+                    )
                   ])
                 ])
-              ])
+              ]),
+              _vm._v(" "),
+              _c("hr")
             ])
           }),
           0
         ),
-        _vm._v(" "),
-        _c("hr"),
         _vm._v(" "),
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-12" }, [
@@ -51015,8 +51001,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\MovieItla\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

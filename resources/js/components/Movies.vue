@@ -17,37 +17,31 @@
                                 v-else
                             />
                             <div class="card-body">
-                                <div>
-                                    <h4>
+                                <div class="card-title">
+                                    <h3>
                                         {{ movie.title }}
-                                    </h4>
-                                    <div class="container">
-                                        <div class="card">
-                                            {{ movie.category }}
-                                        </div>
-                                        <div class="card">
-                                            <b-button
-                                                variant="outline-primary"
-                                                type="button"
-                                                class="btn btn-ghost-primary"
-                                            >
-                                                <a
-                                                    :href="
-                                                        `${movie.link_trailer}`
-                                                    "
-                                                    target="_blank"
-                                                >
-                                                    Ver Trailer
-                                                </a>
-                                            </b-button>
-                                        </div>
-                                    </div>
+                                    </h3>
+                                </div>
+                                <div class="card-category">
+                                    {{ movie.category }}
+                                </div>
+                                <div class="card-button">
+                                    <button class="btn btn-outline-info btn-sm">
+                                        <img src="/assets/jugar.png" alt="" />
+                                        <a
+                                            :href="`${movie.link_trailer}`"
+                                            target="_blank"
+                                        >
+                                            VER TRAILER
+                                        </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                        <hr />
                     </div>
                 </div>
-                <hr />
+
                 <div class="row">
                     <div class="col-md-12">
                         <nav aria-label="...">
@@ -110,6 +104,7 @@
 </template>
 <script>
 import axios from "axios";
+
 export default {
     data() {
         return {
@@ -175,8 +170,18 @@ export default {
 </script>
 
 <style scoped>
-.container {
-    background-color: #fff;
+.main,
+nav,
+.cardc,
+.mov,
+.row,
+.row2,
+.page-item {
+    background-color: #1d1a26;
+}
+
+hr {
+    background-color: #242e37;
 }
 
 .page-item.active .page-link {
@@ -192,17 +197,24 @@ export default {
     display: inline-block;
 }
 
-.card {
-    /* background-color: #1d1a26;*/
-
-    color: #000;
+.card-button img {
+    height: 10px;
+    width: 10px;
 }
 
-.card-body h4 {
-    margin-left: 20px;
+.mov {
+    background-color: #1d1a26;
+    color: #fff;
 }
-.container .card {
-    margin-left: 20px;
+
+.card-category {
+    color: #756a6a;
+    margin: -15px 0 20px 0;
+}
+
+.card-button a {
+    font-size: 13px;
+    text-decoration: none;
 }
 
 .card-img-top {

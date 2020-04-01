@@ -1,10 +1,13 @@
 <template>
     <div class="color">
         <div class="content">
-            <img class="logo" src="https://image.flaticon.com/icons/svg/68/68207.svg" alt="" />
+            <img
+                class="logo"
+                src="https://image.flaticon.com/icons/svg/747/747965.svg"
+                alt=""
+            />
             <div class="title m-b-md">
-                {{ title }} <br />
-                {{ secondt }}
+                {{ title }}
             </div>
             <div class="links">
                 <a href="#">Catálogo</a>
@@ -24,31 +27,31 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Karla|Pirata+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Karla|Oswald&display=swap");
 
 .title,
 .logo {
-    display: inline;
-    
+    margin-top: 20px;
+    display: inline-block;
 }
 
 .title,
 .links {
-    display: inline-block;
+    display: inline;
     vertical-align: middle;
 }
 
 .title {
     font-size: 40px;
-    font-family: "Pirata One", cursive;
-    margin: 0 400px 0 0px;
+    font-family: "Oswald", sans-serif;
+    margin: 0 200px 0 0px;
     padding-left: 10px;
+    color: white;
 }
 
 .logo {
     height: 64px;
     width: 64px;
-    
 }
 
 .links > a {
@@ -58,6 +61,7 @@ export default {
     font-weight: 200;
     text-decoration: none;
     font-family: "Karla", sans-serif;
+    color: white;
 }
 
 .m-b-md {
