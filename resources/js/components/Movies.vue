@@ -1,7 +1,7 @@
 <!--col-md-4-->
 <template>
     <main role="main" class="background">
-        <div class="album py-5 bg-light">
+        <div class="album py-5">
             <div class="container">
                 <div class="row">
                     <div class="mov" v-for="movie in movies" :key="movie.id">
@@ -182,14 +182,8 @@ export default {
 
 <style scoped>
 .main,
-nav,
-.cardc,
-.mov,
-.row,
-.row2,
-.page-item,
-.background {
-    background-color: #1d1a26;
+.album {
+    background-color: #1e1b26;
 }
 
 hr {

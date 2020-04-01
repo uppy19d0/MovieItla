@@ -6822,7 +6822,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.main[data-v-d0a3c064],\r\nnav[data-v-d0a3c064],\r\n.cardc[data-v-d0a3c064],\r\n.mov[data-v-d0a3c064],\r\n.row[data-v-d0a3c064],\r\n.row2[data-v-d0a3c064],\r\n.page-item[data-v-d0a3c064],\r\n.background[data-v-d0a3c064] {\r\n    background-color: #1d1a26;\n}\nhr[data-v-d0a3c064] {\r\n    background-color: #242e37;\n}\n.page-item.active .page-link[data-v-d0a3c064] {\r\n    background: #55595c;\n}\n.page-link[data-v-d0a3c064] {\r\n    color: #55595c;\n}\n.box-movie[data-v-d0a3c064] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-d0a3c064] {\r\n    display: inline-block;\n}\n.card-button img[data-v-d0a3c064] {\r\n    height: 10px;\r\n    width: 10px;\n}\n.mov[data-v-d0a3c064] {\r\n    background-color: #1d1a26;\r\n    color: #fff;\n}\n.card-category[data-v-d0a3c064] {\r\n    color: #756a6a;\r\n    margin: -15px 0 20px 0;\n}\n.card-button a[data-v-d0a3c064] {\r\n    font-size: 13px;\r\n    text-decoration: none;\n}\n.card-img-top[data-v-d0a3c064] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
+exports.push([module.i, "\n.main[data-v-d0a3c064],\r\n.album[data-v-d0a3c064] {\r\n    background-color: #1e1b26;\n}\nhr[data-v-d0a3c064] {\r\n    background-color: #242e37;\n}\n.page-item.active .page-link[data-v-d0a3c064] {\r\n    background: #55595c;\n}\n.page-link[data-v-d0a3c064] {\r\n    color: #55595c;\n}\n.box-movie[data-v-d0a3c064] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-d0a3c064] {\r\n    display: inline-block;\n}\n.card-button img[data-v-d0a3c064] {\r\n    height: 10px;\r\n    width: 10px;\n}\n.mov[data-v-d0a3c064] {\r\n    background-color: #1d1a26;\r\n    color: #fff;\n}\n.card-category[data-v-d0a3c064] {\r\n    color: #756a6a;\r\n    margin: -15px 0 20px 0;\n}\n.card-button a[data-v-d0a3c064] {\r\n    font-size: 13px;\r\n    text-decoration: none;\n}\n.card-img-top[data-v-d0a3c064] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
 
 // exports
 
@@ -38524,7 +38524,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("main", { staticClass: "background", attrs: { role: "main" } }, [
-    _c("div", { staticClass: "album py-5 bg-light" }, [
+    _c("div", { staticClass: "album py-5" }, [
       _c("div", { staticClass: "container" }, [
         _c(
           "div",

@@ -16,7 +16,7 @@
             <div class="otro col-xs-8 col-xs-offset-2">
                 <div id="app">
                     <header-component class="cp" title="WATCH MOVIES"></header-component>
-                    <movies-component ></movies-component>
+                    <movies-component class="cp2"></movies-component>
                 </div>
             </div>
         </div>
@@ -25,7 +25,13 @@
 <style type="text/css">
    body{ background-image: url(/assets/fondo.jpg) ;
    }
+   .container {
+       background-color: #1e1b26;
+   }
 
+   .cp2 {
+       margin-top: 100px;
+   }
     </style>
 
 </body>
