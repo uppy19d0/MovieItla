@@ -18,6 +18,8 @@ Route::get('/', function () {
 });
 
 Route::view('/movies','movies');
+
+
 // Route::view('/movie','h')
 
 

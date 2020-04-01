@@ -26,9 +26,6 @@
    body{ background-image: url(/assets/fondo.jpg) ;
    }
 
-   .app {
-       background-color: #010101;   
-   }
     </style>
 
 </body>

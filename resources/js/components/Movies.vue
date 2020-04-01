@@ -1,6 +1,6 @@
 <!--col-md-4-->
 <template>
-    <main role="main">
+    <main role="main" class="background">
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="row">
@@ -35,6 +35,17 @@
                                             VER TRAILER
                                         </a>
                                     </button>
+                                </div>
+                                <div class="btn-group">
+                                    <router-link
+                                        :to="{
+                                            name: 'singleMovie',
+                                            params: { slug: movie.id }
+                                        }"
+                                        tag="button"
+                                        class="btn btn-sm btn-outline-secondary"
+                                        >Detail</router-link
+                                    >
                                 </div>
                             </div>
                         </div>
@@ -176,7 +187,8 @@ nav,
 .mov,
 .row,
 .row2,
-.page-item {
+.page-item,
+.background {
     background-color: #1d1a26;
 }
 
