@@ -16,7 +16,7 @@
     </head>
     <body class="bg-light"> 
         <div id="app">
-            {{-- <example-component></app-layout> --}}
+            <create-component></create-component>
         </div>
         <script src="{{ asset('js/app.js') }}"></script>
     </body>

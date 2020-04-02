@@ -13,18 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::view('/movies','movies');
+Route::view('/','movies');
+// Route::post('/movie','MovieController@create');
+Route::get('/admin', 'HomeController@index')->name('home');
 
+Auth::routes();
 
-// Route::view('/movie','h')
-
-
-// Route::group([
-//     'prefix'     => config('admin.route.prefix'),
-//     'namespace'  => 'Tests\Controllers',
-//     'middleware' => ['web', 'admin'],
-// ]);
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/movie', 'HomeController@create')->name('home');

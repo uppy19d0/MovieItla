@@ -13,9 +13,9 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    You are logged in!
                 </div>
+            </div id='app'>
+            <create-component></create-component>
             </div>
         </div>
     </div>

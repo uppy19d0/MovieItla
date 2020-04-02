@@ -36,7 +36,7 @@
                                         </a>
                                     </button>
                                 </div>
-                                <div class="btn-group">
+                                <!-- <div class="btn-group">
                                     <router-link
                                         :to="{
                                             name: 'singleMovie',
@@ -46,7 +46,7 @@
                                         class="btn btn-sm btn-outline-secondary"
                                         >Detail</router-link
                                     >
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <hr />
@@ -84,7 +84,7 @@
                                         @click="
                                             getMovies(
                                                 fetch_url +
-                                                    'api/film?page=' +
+                                                    'api/movies?page=' +
                                                     page
                                             )
                                         "
@@ -121,7 +121,7 @@ export default {
         return {
             movies: [],
             pagination: {},
-            fetch_url: process.env.MIX_APP_URL
+            fetch_url: "http://localhost:8000"
         };
     },
     created: function() {
@@ -133,11 +133,10 @@ export default {
             console.log(urlmovie);
             axios.get(urlmovie).then(response => {
                 this.movies = response.data;
-                console.log(response.data, "waooo");
+                // this.movies.makePginate(res.data.meta,res.data.links);
             });
-        }
-    },
-    makePginate(meta, links) {
+        }, 
+        makePginate(meta, links) {
         let pagination = {
             current_page: meta.current_page,
             last_page: meta.last_page,
@@ -145,22 +144,9 @@ export default {
             prev_page_url: links.prev
         };
         this.pagination = pagination;
+    }
     },
-    deleteFilm(movie_id) {
-        if (confirm("Are you sure?")) {
-            api.call("delete", this.fetch_url + "api/movie/" + movie_id)
-                .then(res => {
-                    //console.log(res);
-                    this.films.splice(this.movies.indexOf(movie_id), 1);
-                    alert(res.data.data.title + "deleted successfully");
-                    this.getMovie();
-                })
-                .catch(err => {
-                    console.log(err);
-                });
-        }
-    },
-    computed: {
+     computed: {
         pages() {
             let vm = this;
             let pages = [];
