@@ -25,5 +25,8 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    public function movies(){
+        return vieW('crud');
+    }
 
 }

@@ -16,7 +16,18 @@
                 v-model="movie.title"
                 required
               >
-              <div class="invalid-feedback" v-if="errors.name">{{errors.name[0]}}</div>
+              </div>
+              <div class="form-group">
+              <label for="Movie Launcher">Movie Cast</label>
+              <input
+                type="text"
+                class="form-control"
+                :class="errors.cast ? 'is-invalid' : '' "
+                placeholder="Movie Cast"
+                v-model="movie.cast"
+                required
+              >
+              <div class="invalid-feedback" v-if="errors.cast">{{errors.cast[0]}}</div>
             </div>
               <div class="form-group">
               <label for="Movie Category">Movie Category</label>
@@ -62,14 +73,14 @@
                 type="text"
                 class="form-control"
                 :class="errors.link_trailer ? 'is-invalid' : '' "
-                placeholder="Trailer Youtube Lin"
+                placeholder="Trailer Youtube Link"
                 v-model="movie.link_trailer"
                 required
               >
-              <div class="invalid-feedback" v-if="errors.release_date">{{errors.release_date[0]}}</div>
+              <div class="invalid-feedback" v-if="errors.link_trailer">{{errors.link_trailer[0]}}</div>
             </div>
-            <!-- <div class="form-group">
-              <label for="Film Rating">Film Rating</label>
+            <div class="form-group">
+              <label for="Movie Rating">Movie Rating</label>
               <select
                 class="form-control"
                 :class="errors.rating ? 'is-invalid' : '' "
@@ -86,7 +97,7 @@
                 <option value="5">5</option>
               </select>
               <div class="invalid-feedback" v-if="errors.rating">{{errors.rating[0]}}</div>
-            </div> -->
+            </div>
             <div class="form-group">
               <label for>Movie Photo</label>
               <input type="file" v-on:change="onImageChange" class="form-control">
@@ -120,6 +131,9 @@ export default {
         category: "",
         image: "",
         link_trailer: "",
+        launcher: "",
+        cast:"",
+        rating:"",
       },
       errors: [],
       status: ""
@@ -148,11 +162,20 @@ export default {
         .post("http://localhost:8000/api/movie", this.movie)
         .then(res => {
           console.log(res);
+          // this.movie.title='';
+          //   this.movie.description='';
+          //   this.movie.category='';
+          //   this.movie.image='';
+          //   this.movie.link_trailer='';
+          //   this.movie.launcher='';
+          //   this.movie.rating=0;
+          //   this.movie.cast='';
         })
         .catch(err => {
           this.errors = err.data.errors;
           this.status = err.status;
         });
+                   getMovies();
     },
   }
 };

@@ -16,6 +16,7 @@
                 </div>
             </div id='app'>
             <create-component></create-component>
+            <adminmovies-component class="cp2"></adminmovies-component>
             </div>
         </div>
     </div>

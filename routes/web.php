@@ -20,5 +20,7 @@ Route::get('/admin', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/movie', 'HomeController@create')->name('home');
+
+// Route::view('/home','welcome');
+// Route::get('/admin/crud_movies', 'HomeController@movies')->name('home');
+// Route::get('/movie', 'HomeController@create')->name('home');

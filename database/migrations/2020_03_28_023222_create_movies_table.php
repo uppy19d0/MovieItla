@@ -18,9 +18,10 @@ class CreateMoviesTable extends Migration
             $table->string('title');
             $table->longtext('description');
             $table->string('category');
+            $table->string('cast')->nullable();
             $table->longtext('image');
             $table->string('link_trailer');
-            $table->unsignedInteger('rating');
+            $table->unsignedInteger('rating')->nullable();
             $table->date('launcher');
             $table->timestamps();
         });
