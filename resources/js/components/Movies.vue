@@ -115,7 +115,6 @@
 </template>
 <script>
 import axios from "axios";
-
 export default {
     data() {
         return {
@@ -135,18 +134,18 @@ export default {
                 this.movies = response.data;
                 // this.movies.makePginate(res.data.meta,res.data.links);
             });
-        }, 
+        },
         makePginate(meta, links) {
-        let pagination = {
-            current_page: meta.current_page,
-            last_page: meta.last_page,
-            next_page_url: links.next,
-            prev_page_url: links.prev
-        };
-        this.pagination = pagination;
-    }
+            let pagination = {
+                current_page: meta.current_page,
+                last_page: meta.last_page,
+                next_page_url: links.next,
+                prev_page_url: links.prev
+            };
+            this.pagination = pagination;
+        }
     },
-     computed: {
+    computed: {
         pages() {
             let vm = this;
             let pages = [];

@@ -1991,6 +1991,54 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2116,6 +2164,50 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -2404,6 +2496,16 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -7156,7 +7258,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.main[data-v-6048d354],\r\n.album[data-v-6048d354] {\r\n  background-color: #1e1b26;\n}\nhr[data-v-6048d354] {\r\n  background-color: #242e37;\n}\n.page-item.active .page-link[data-v-6048d354] {\r\n  background: #55595c;\n}\n.page-link[data-v-6048d354] {\r\n  color: #55595c;\n}\n.box-movie[data-v-6048d354] {\r\n  background-color: #212529;\n}\n.mov .cardc[data-v-6048d354] {\r\n  display: inline-block;\n}\n.card-button img[data-v-6048d354] {\r\n  height: 10px;\r\n  width: 10px;\n}\n.mov[data-v-6048d354] {\r\n  background-color: #1d1a26;\r\n  color: #fff;\n}\n.card-category[data-v-6048d354] {\r\n  color: #756a6a;\r\n  margin: -15px 0 20px 0;\n}\n.card-button a[data-v-6048d354] {\r\n  font-size: 13px;\r\n  text-decoration: none;\n}\n.card-img-top[data-v-6048d354] {\r\n  margin: 20px 0 0 20px;\r\n  height: 340px;\r\n  width: 240px;\r\n  border-radius: 3px;\n}\r\n", ""]);
+exports.push([module.i, "\n.background h3[data-v-6048d354] {\r\n    margin-bottom: 20px;\r\n\r\n    font-size: 25px;\n}\n.background[data-v-6048d354] {\r\n    margin: -950px -100px 0 500px;\r\n    background-color: #fff;\n}\n.mov[data-v-6048d354] {\r\n    margin: 0 0px 0 25px;\n}\n.btn-admin[data-v-6048d354] {\r\n    margin-top: 20px;\n}\n.main[data-v-6048d354],\r\n.album[data-v-6048d354] {\r\n    background-color: #1e1b26;\n}\nhr[data-v-6048d354] {\r\n    background-color: #242e37;\n}\n.page-item.active .page-link[data-v-6048d354] {\r\n    background: #55595c;\n}\n.page-link[data-v-6048d354] {\r\n    color: #55595c;\n}\n.box-movie[data-v-6048d354] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-6048d354] {\r\n    display: inline-block;\n}\n.card-button img[data-v-6048d354] {\r\n    height: 10px;\r\n    width: 10px;\n}\n.mov[data-v-6048d354] {\r\n    background-color: #1d1a26;\r\n    color: #fff;\n}\n.card-category[data-v-6048d354] {\r\n    color: #756a6a;\r\n    margin: -15px 0 20px 0;\n}\n.card-button a[data-v-6048d354] {\r\n    font-size: 13px;\r\n    text-decoration: none;\n}\n.card-img-top[data-v-6048d354] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
 
 // exports
 
@@ -7194,7 +7296,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.film-image {\n  width: 40%;\n}\n", ""]);
+exports.push([module.i, "\n.film-image {\r\n    width: 40%;\n}\n.all {\r\n    margin-left: -200px;\r\n    background-color: #ffffff;\n}\n.all input {\r\n    background-color: #f8f8f8;\n}\n.all h3 {\r\n    font-size: 25px;\n}\nlabel {\r\n    font-weight: bolder;\n}\r\n", ""]);
 
 // exports
 
@@ -7213,7 +7315,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Karla|Oswald&display=swap);", ""]);
 
 // module
-exports.push([module.i, "\n.title[data-v-798ca618],\r\n.logo[data-v-798ca618] {\r\n    margin-top: 20px;\r\n    display: inline-block;\n}\n.title[data-v-798ca618],\r\n.links[data-v-798ca618] {\r\n    display: inline;\r\n    vertical-align: middle;\n}\n.title[data-v-798ca618] {\r\n    font-size: 40px;\r\n    font-family: \"Oswald\", sans-serif;\r\n    margin: 0 200px 0 0px;\r\n    padding-left: 10px;\r\n    color: white;\n}\n.logo[data-v-798ca618] {\r\n    height: 64px;\r\n    width: 64px;\n}\n.links > a[data-v-798ca618] {\r\n    color: #000;\r\n    padding: 0 25px;\r\n    font-size: 20px;\r\n    font-weight: 200;\r\n    text-decoration: none;\r\n    font-family: \"Karla\", sans-serif;\r\n    color: white;\n}\n.m-b-md[data-v-798ca618] {\r\n    margin-bottom: 30px;\n}\n*[data-v-798ca618] {\r\n    margin: 0px;\r\n    padding: 0px;\n}\r\n", ""]);
+exports.push([module.i, "\n.title[data-v-798ca618],\r\n.logo[data-v-798ca618] {\r\n    margin-top: 20px;\r\n    display: inline-block;\n}\n.title[data-v-798ca618] {\r\n    font-size: 40px;\r\n    font-family: \"Oswald\", sans-serif;\r\n    margin: 0 200px 0 0px;\r\n    padding-left: 10px;\r\n    color: white;\n}\n.logo[data-v-798ca618] {\r\n    height: 64px;\r\n    width: 64px;\n}\n.links li a[data-v-798ca618] {\r\n    margin: 0;\r\n    padding: 0;\r\n    list-style: none;\r\n    color: #000;\r\n    font-size: 20px;\r\n    font-weight: 200;\r\n    text-decoration: none;\r\n    font-family: \"Karla\", sans-serif;\r\n    color: white;\n}\n.m-b-md[data-v-798ca618] {\r\n    margin-bottom: 30px;\n}\n*[data-v-798ca618] {\r\n    margin: 0px;\r\n    padding: 0px;\n}\r\n", ""]);
 
 // exports
 
@@ -38836,6 +38938,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("main", { staticClass: "background", attrs: { role: "main" } }, [
+    _c("h3", { staticClass: "badge badge-info" }, [_vm._v("Preview")]),
+    _vm._v(" "),
     _c("div", { staticClass: "album py-5" }, [
       _c("div", { staticClass: "container" }, [
         _c(
@@ -38856,84 +38960,97 @@ var render = function() {
                       }
                     }),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "card-body" },
-                  [
-                    _c("div", { staticClass: "card-title" }, [
-                      _c("h3", [_vm._v(_vm._s(movie.title))])
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-category" }, [
-                      _vm._v(_vm._s(movie.category))
-                    ]),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "card-button" }, [
+                _c("div", { staticClass: "card-body" }, [
+                  _c("div", { staticClass: "card-title" }, [
+                    _c("h3", [_vm._v(_vm._s(movie.title))])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-category" }, [
+                    _vm._v(
+                      "\n                                " +
+                        _vm._s(movie.category) +
+                        "\n                            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "card-button" }, [
+                    _c(
+                      "button",
+                      { staticClass: "btn btn-outline-info btn-sm" },
+                      [
+                        _c("img", {
+                          attrs: { src: "/assets/jugar.png", alt: "" }
+                        }),
+                        _vm._v(" "),
+                        _c(
+                          "a",
+                          {
+                            attrs: {
+                              href: "" + movie.link_trailer,
+                              target: "_blank"
+                            }
+                          },
+                          [_vm._v("VER TRAILER")]
+                        )
+                      ]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "btn-admin" },
+                    [
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "btn btn-sm btn-outline-success",
+                          attrs: {
+                            to: {
+                              name: "singleFilm",
+                              params: { slug: movie.id }
+                            },
+                            tag: "button"
+                          }
+                        },
+                        [_vm._v("View")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "router-link",
+                        {
+                          staticClass: "btn btn-sm btn-outline-primary",
+                          attrs: {
+                            to: {
+                              name: "editFilm",
+                              params: { slug: movie.id }
+                            },
+                            tag: "button"
+                          }
+                        },
+                        [_vm._v("Edit")]
+                      ),
+                      _vm._v(" "),
                       _c(
                         "button",
-                        { staticClass: "btn btn-outline-info btn-sm" },
+                        {
+                          staticClass: "btn btn-sm btn-outline-danger",
+                          attrs: { type: "button" },
+                          on: {
+                            click: function($event) {
+                              return _vm.deleteMovie(movie.id)
+                            }
+                          }
+                        },
                         [
-                          _c("img", {
-                            attrs: { src: "/assets/jugar.png", alt: "" }
-                          }),
-                          _vm._v(" "),
-                          _c(
-                            "a",
-                            {
-                              attrs: {
-                                href: "" + movie.link_trailer,
-                                target: "_blank"
-                              }
-                            },
-                            [_vm._v("VER TRAILER")]
+                          _vm._v(
+                            "\n                                    Delete\n                                "
                           )
                         ]
                       )
-                    ]),
-                    _vm._v(" "),
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "btn btn-sm btn-outline-secondary",
-                        attrs: {
-                          to: {
-                            name: "singleFilm",
-                            params: { slug: movie.id }
-                          },
-                          tag: "button"
-                        }
-                      },
-                      [_vm._v("View")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "router-link",
-                      {
-                        staticClass: "btn btn-sm btn-outline-secondary",
-                        attrs: {
-                          to: { name: "editFilm", params: { slug: movie.id } },
-                          tag: "button"
-                        }
-                      },
-                      [_vm._v("Edit")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-sm btn-outline-secondary",
-                        attrs: { type: "button" },
-                        on: {
-                          click: function($event) {
-                            return _vm.deleteMovie(movie.id)
-                          }
-                        }
-                      },
-                      [_vm._v("Delete")]
-                    )
-                  ],
-                  1
-                )
+                    ],
+                    1
+                  )
+                ])
               ]),
               _vm._v(" "),
               _c("hr")
@@ -38977,7 +39094,9 @@ var render = function() {
                       {
                         key: page,
                         staticClass: "page-item",
-                        class: { active: _vm.pagination.current_page == page }
+                        class: {
+                          active: _vm.pagination.current_page == page
+                        }
                       },
                       [
                         _c(
@@ -39123,8 +39242,10 @@ var render = function() {
   return _c("div", { staticClass: "album py-5 bg-light" }, [
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-8 offset-md-2" }, [
-          _c("h3", [_vm._v("Create Movie")]),
+        _c("div", { staticClass: "all col-md-8 offset-md-2" }, [
+          _c("h3", { staticClass: "badge badge-info" }, [
+            _vm._v("Create Movie")
+          ]),
           _vm._v(" "),
           _c("hr"),
           _vm._v(" "),
@@ -39141,7 +39262,7 @@ var render = function() {
             [
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "Movie Title" } }, [
-                  _vm._v("Movie TITLE")
+                  _vm._v("Movie title")
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -39174,7 +39295,7 @@ var render = function() {
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "Movie Launcher" } }, [
-                  _vm._v("Movie Cast")
+                  _vm._v("Movie cast")
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -39206,14 +39327,18 @@ var render = function() {
                 _vm._v(" "),
                 _vm.errors.cast
                   ? _c("div", { staticClass: "invalid-feedback" }, [
-                      _vm._v(_vm._s(_vm.errors.cast[0]))
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.errors.cast[0]) +
+                          "\n                        "
+                      )
                     ])
                   : _vm._e()
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "Movie Category" } }, [
-                  _vm._v("Movie Category")
+                  _vm._v("Movie category")
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -39245,14 +39370,18 @@ var render = function() {
                 _vm._v(" "),
                 _vm.errors.name
                   ? _c("div", { staticClass: "invalid-feedback" }, [
-                      _vm._v(_vm._s(_vm.errors.name[0]))
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.errors.name[0]) +
+                          "\n                        "
+                      )
                     ])
                   : _vm._e()
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "Movie Launcher" } }, [
-                  _vm._v("Movie Launcher")
+                  _vm._v("Movie launcher")
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -39284,14 +39413,18 @@ var render = function() {
                 _vm._v(" "),
                 _vm.errors.name
                   ? _c("div", { staticClass: "invalid-feedback" }, [
-                      _vm._v(_vm._s(_vm.errors.name[0]))
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.errors.name[0]) +
+                          "\n                        "
+                      )
                     ])
                   : _vm._e()
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "Movie Description" } }, [
-                  _vm._v("Movie Description")
+                  _vm._v("Movie description")
                 ]),
                 _vm._v(" "),
                 _c("textarea", {
@@ -39327,14 +39460,20 @@ var render = function() {
                 _vm._v(" "),
                 _vm.errors.description
                   ? _c("div", { staticClass: "invalid-feedback" }, [
-                      _vm._v(_vm._s(_vm.errors.description[0]))
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.errors.description[0]) +
+                          "\n                        "
+                      )
                     ])
                   : _vm._e()
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "Movie Youtube Link" } }, [
-                  _vm._v(" Link to Youtube Trailer ")
+                  _vm._v(
+                    "\n                            Link to youtube trailer\n                        "
+                  )
                 ]),
                 _vm._v(" "),
                 _c("input", {
@@ -39366,14 +39505,18 @@ var render = function() {
                 _vm._v(" "),
                 _vm.errors.link_trailer
                   ? _c("div", { staticClass: "invalid-feedback" }, [
-                      _vm._v(_vm._s(_vm.errors.link_trailer[0]))
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.errors.link_trailer[0]) +
+                          "\n                        "
+                      )
                     ])
                   : _vm._e()
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
                 _c("label", { attrs: { for: "Movie Rating" } }, [
-                  _vm._v("Movie Rating")
+                  _vm._v("Movie rating")
                 ]),
                 _vm._v(" "),
                 _c(
@@ -39438,16 +39581,21 @@ var render = function() {
                 _vm._v(" "),
                 _vm.errors.rating
                   ? _c("div", { staticClass: "invalid-feedback" }, [
-                      _vm._v(_vm._s(_vm.errors.rating[0]))
+                      _vm._v(
+                        "\n                            " +
+                          _vm._s(_vm.errors.rating[0]) +
+                          "\n                        "
+                      )
                     ])
                   : _vm._e()
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "form-group" }, [
-                _c("label", { attrs: { for: "" } }, [_vm._v("Movie Photo")]),
+                _c("label", [_vm._v("Movie photo")]),
+                _vm._v(" "),
+                _c("br"),
                 _vm._v(" "),
                 _c("input", {
-                  staticClass: "form-control",
                   attrs: { type: "file" },
                   on: { change: _vm.onImageChange }
                 }),
@@ -39456,7 +39604,13 @@ var render = function() {
                   ? _c(
                       "div",
                       { class: _vm.errors.country ? "is-invalid" : "" },
-                      [_vm._v(_vm._s(_vm.errors.image[0]))]
+                      [
+                        _vm._v(
+                          "\n                            " +
+                            _vm._s(_vm.errors.image[0]) +
+                            "\n                        "
+                        )
+                      ]
                     )
                   : _vm._e()
               ]),
@@ -39474,19 +39628,31 @@ var render = function() {
               _vm._v(" "),
               _vm.status === 200
                 ? _c("div", { staticClass: "alert alert-success" }, [
-                    _vm._v("Movie updated successfully")
+                    _vm._v(
+                      "\n                        Movie updated successfully\n                    "
+                    )
                   ])
                 : _vm._e(),
               _vm._v(" "),
               _vm.status === 409
                 ? _c("div", { staticClass: "alert alert-danger" }, [
-                    _vm._v(_vm._s(_vm.errors))
+                    _vm._v(
+                      "\n                        " +
+                        _vm._s(_vm.errors) +
+                        "\n                    "
+                    )
                   ])
                 : _vm._e(),
               _vm._v(" "),
-              _c("button", { staticClass: "btn btn-danger float-right" }, [
-                _vm._v("Save")
-              ])
+              _c(
+                "button",
+                { staticClass: "btn btn-lg btn-primary btn-block" },
+                [
+                  _vm._v(
+                    "\n                        Save Movie\n                    "
+                  )
+                ]
+              )
             ]
           )
         ])
@@ -39622,16 +39788,24 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "links" }, [
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Catálogo")]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "http://localhost:8000/api/documentation" } }, [
-        _vm._v("Documentation Api")
-      ]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "#" } }, [_vm._v("Contacto")]),
-      _vm._v(" "),
-      _c("a", { attrs: { href: "http://localhost:8000/admin" } }, [
-        _vm._v("Admin")
+      _c("ul", [
+        _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Catálogo")])]),
+        _vm._v(" "),
+        _c("li", [
+          _c(
+            "a",
+            { attrs: { href: "http://localhost:8000/api/documentation" } },
+            [_vm._v("Documentation Api")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Contacto")])]),
+        _vm._v(" "),
+        _c("li", [
+          _c("a", { attrs: { href: "http://localhost:8000/admin" } }, [
+            _vm._v("Admin")
+          ])
+        ])
       ])
     ])
   }
@@ -52595,8 +52769,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\MovieItla\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

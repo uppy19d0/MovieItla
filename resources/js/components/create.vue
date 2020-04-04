@@ -1,188 +1,250 @@
 <template>
-  <div class="album py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 offset-md-2">
-          <h3>Create Movie</h3>
-          <hr>
-          <form @submit.prevent="saveMovie">
-            <div class="form-group">
-              <label for="Movie Title">Movie TITLE</label>
-              <input
-                type="text"
-                class="form-control"
-                :class="errors.title ? 'is-invalid' : '' "
-                placeholder="Movie Title"
-                v-model="movie.title"
-                required
-              >
-              </div>
-              <div class="form-group">
-              <label for="Movie Launcher">Movie Cast</label>
-              <input
-                type="text"
-                class="form-control"
-                :class="errors.cast ? 'is-invalid' : '' "
-                placeholder="Movie Cast"
-                v-model="movie.cast"
-                required
-              >
-              <div class="invalid-feedback" v-if="errors.cast">{{errors.cast[0]}}</div>
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="all col-md-8 offset-md-2">
+                    <h3 class="badge badge-info">Create Movie</h3>
+                    <hr />
+                    <form @submit.prevent="saveMovie">
+                        <div class="form-group">
+                            <label for="Movie Title">Movie title</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                :class="errors.title ? 'is-invalid' : ''"
+                                placeholder="Movie Title"
+                                v-model="movie.title"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="Movie Launcher">Movie cast</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                :class="errors.cast ? 'is-invalid' : ''"
+                                placeholder="Movie Cast"
+                                v-model="movie.cast"
+                                required
+                            />
+                            <div class="invalid-feedback" v-if="errors.cast">
+                                {{ errors.cast[0] }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Movie Category">Movie category</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                :class="errors.category ? 'is-invalid' : ''"
+                                placeholder="Movie Category"
+                                v-model="movie.category"
+                                required
+                            />
+                            <div class="invalid-feedback" v-if="errors.name">
+                                {{ errors.name[0] }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Movie Launcher">Movie launcher</label>
+                            <input
+                                type="date"
+                                class="form-control"
+                                :class="errors.launcher ? 'is-invalid' : ''"
+                                placeholder="Movie Launcher"
+                                v-model="movie.launcher"
+                                required
+                            />
+                            <div class="invalid-feedback" v-if="errors.name">
+                                {{ errors.name[0] }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Movie Description"
+                                >Movie description</label
+                            >
+                            <textarea
+                                type="text"
+                                class="form-control"
+                                :class="errors.description ? 'is-invalid' : ''"
+                                placeholder="Movie Description"
+                                v-model="movie.description"
+                                @keydown="errors.description = ''"
+                                rows="6"
+                                required
+                            ></textarea>
+                            <div
+                                class="invalid-feedback"
+                                v-if="errors.description"
+                            >
+                                {{ errors.description[0] }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Movie Youtube Link">
+                                Link to youtube trailer
+                            </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                :class="errors.link_trailer ? 'is-invalid' : ''"
+                                placeholder="Trailer Youtube Link"
+                                v-model="movie.link_trailer"
+                                required
+                            />
+                            <div
+                                class="invalid-feedback"
+                                v-if="errors.link_trailer"
+                            >
+                                {{ errors.link_trailer[0] }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="Movie Rating">Movie rating</label>
+                            <select
+                                class="form-control"
+                                :class="errors.rating ? 'is-invalid' : ''"
+                                v-model="movie.rating"
+                                @keydown="errors.rating = ''"
+                                required
+                            >
+                                <option
+                                    value="movie.rating"
+                                    selected
+                                    v-if="movie.rating"
+                                    >{{ movie.rating }}</option
+                                >
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <div class="invalid-feedback" v-if="errors.rating">
+                                {{ errors.rating[0] }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Movie photo</label>
+                            <br />
+                            <input
+                                type="file"
+                                v-on:change="onImageChange"
+                                class=""
+                            />
+                            <div
+                                :class="errors.country ? 'is-invalid' : ''"
+                                v-if="errors.image"
+                            >
+                                {{ errors.image[0] }}
+                            </div>
+                        </div>
+                        <div>
+                            <img
+                                :src="movie.image"
+                                v-if="movie.image"
+                                class="img-responsive film-image"
+                            />
+                        </div>
+                        <hr />
+                        <div class="alert alert-success" v-if="status === 200">
+                            Movie updated successfully
+                        </div>
+                        <div class="alert alert-danger" v-if="status === 409">
+                            {{ errors }}
+                        </div>
+                        <button class="btn btn-lg btn-primary btn-block">
+                            Save Movie
+                        </button>
+                    </form>
+                </div>
             </div>
-              <div class="form-group">
-              <label for="Movie Category">Movie Category</label>
-              <input
-                type="text"
-                class="form-control"
-                :class="errors.category ? 'is-invalid' : '' "
-                placeholder="Movie Category"
-                v-model="movie.category"
-                required
-              >
-              <div class="invalid-feedback" v-if="errors.name">{{errors.name[0]}}</div>
-            </div>
-              <div class="form-group">
-              <label for="Movie Launcher">Movie Launcher</label>
-              <input
-                type="date"
-                class="form-control"
-                :class="errors.launcher ? 'is-invalid' : '' "
-                placeholder="Movie Launcher"
-                v-model="movie.launcher"
-                required
-              >
-              <div class="invalid-feedback" v-if="errors.name">{{errors.name[0]}}</div>
-            </div>
-            <div class="form-group">
-              <label for="Movie Description">Movie Description</label>
-              <textarea
-                type="text"
-                class="form-control"
-                :class="errors.description ? 'is-invalid' : '' "
-                placeholder="Movie Description"
-                v-model="movie.description"
-                @keydown="errors.description = ''"
-                rows="6"
-                required
-              ></textarea>
-              <div class="invalid-feedback" v-if="errors.description">{{errors.description[0]}}</div>
-            </div>
-            <div class="form-group">
-              <label for="Movie Youtube Link"> Link to Youtube Trailer </label>
-              <input
-                type="text"
-                class="form-control"
-                :class="errors.link_trailer ? 'is-invalid' : '' "
-                placeholder="Trailer Youtube Link"
-                v-model="movie.link_trailer"
-                required
-              >
-              <div class="invalid-feedback" v-if="errors.link_trailer">{{errors.link_trailer[0]}}</div>
-            </div>
-            <div class="form-group">
-              <label for="Movie Rating">Movie Rating</label>
-              <select
-                class="form-control"
-                :class="errors.rating ? 'is-invalid' : '' "
-                v-model="movie.rating"
-                @keydown="errors.rating = ''"
-                required
-              >
-                <option value="movie.rating" selected v-if="movie.rating">{{movie.rating}}</option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-              <div class="invalid-feedback" v-if="errors.rating">{{errors.rating[0]}}</div>
-            </div>
-            <div class="form-group">
-              <label for>Movie Photo</label>
-              <input type="file" v-on:change="onImageChange" class="form-control">
-              <div
-                :class="errors.country ? 'is-invalid' : '' "
-                v-if="errors.image"
-              >{{errors.image[0]}}</div>
-            </div>
-            <div>
-              <img :src="movie.image" v-if="movie.image" class="img-responsive film-image">
-            </div>
-            <hr>
-            <div class="alert alert-success" v-if="status === 200">Movie updated successfully</div>
-            <div class="alert alert-danger" v-if="status === 409">{{errors}}</div> 
-            <button class="btn btn-danger float-right">Save</button>
-          </form>
         </div>
-      </div>
     </div>
-  </div>
 </template>
 
 <script>
-import axios from 'axios';
+import axios from "axios";
+
 export default {
-  data() {
-    return {
-      movie: {
-        title: "",
-        description: "",
-        category: "",
-        image: "",
-        link_trailer: "",
-        launcher: "",
-        cast:"",
-        rating:"",
-      },
-      errors: [],
-      status: ""
-    };
-  },
-  methods: {
-    onImageChange(e) {
-      let files = e.target.files || e.dataTransfer.files;
-      if (!files.length) {
-        return;
-      }
-      this.createImage(files[0]);
+    data() {
+        return {
+            movie: {
+                title: "",
+                description: "",
+                category: "",
+                image: "",
+                link_trailer: "",
+                launcher: "",
+                cast: "",
+                rating: ""
+            },
+            errors: [],
+            status: ""
+        };
     },
-    createImage(file) {
-      let reader = new FileReader();
-      reader.onload = e => {
-        this.movie.image = e.target.result;
-      };
-      reader.readAsDataURL(file);
-    },
-    saveMovie() {
-      console.log(this.movie);
-      this.status = "";
-      this.errors = "";
-      axios
-        .post("http://localhost:8000/api/movie", this.movie)
-        .then(res => {
-          console.log(res);
-          // this.movie.title='';
-          //   this.movie.description='';
-          //   this.movie.category='';
-          //   this.movie.image='';
-          //   this.movie.link_trailer='';
-          //   this.movie.launcher='';
-          //   this.movie.rating=0;
-          //   this.movie.cast='';
-        })
-        .catch(err => {
-          this.errors = err.data.errors;
-          this.status = err.status;
-        });
-                   getMovies();
-    },
-  }
+    methods: {
+        onImageChange(e) {
+            let files = e.target.files || e.dataTransfer.files;
+            if (!files.length) {
+                return;
+            }
+            this.createImage(files[0]);
+        },
+        createImage(file) {
+            let reader = new FileReader();
+            reader.onload = e => {
+                this.movie.image = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        },
+        saveMovie() {
+            console.log(this.movie);
+            this.status = "";
+            this.errors = "";
+            axios
+                .post("http://localhost:8000/api/movie", this.movie)
+                .then(res => {
+                    console.log(res);
+                    // this.movie.title='';
+                    //   this.movie.description='';
+                    //   this.movie.category='';
+                    //   this.movie.image='';
+                    //   this.movie.link_trailer='';
+                    //   this.movie.launcher='';
+                    //   this.movie.rating=0;
+                    //   this.movie.cast='';
+                })
+                .catch(err => {
+                    this.errors = err.data.errors;
+                    this.status = err.status;
+                });
+            getMovies();
+        }
+    }
 };
 </script>
 
 <style>
 .film-image {
-  width: 40%;
+    width: 40%;
+}
+
+.all {
+    margin-left: -200px;
+    background-color: #ffffff;
+}
+
+.all input {
+    background-color: #f8f8f8;
+}
+
+.all h3 {
+    font-size: 25px;
+}
+
+label {
+    font-weight: bolder;
 }
 </style>

@@ -18,6 +18,7 @@ Route::view('/','movies');
 // Route::post('/movie','MovieController@create');
 Route::get('/admin', 'HomeController@index')->name('home');
 
+Route::get('/admin/create','HomeController@create');
 Auth::routes();
 
 

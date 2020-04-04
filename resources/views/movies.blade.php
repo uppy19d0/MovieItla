@@ -11,15 +11,12 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="otro col-xs-8 col-xs-offset-2">
                 <div id="app">
                     <header-component class="cp" title="WATCH MOVIES"></header-component>
+                    <div class="container">
                     <movies-component class="cp2"></movies-component>
+                    </div>
                 </div>
-            </div>
-        </div>
     </div>
     <script type="text/javascript" src="js/app.js"></script>
 <style type="text/css">

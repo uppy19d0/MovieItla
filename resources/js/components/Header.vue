@@ -10,12 +10,22 @@
                 {{ title }}
             </div>
             <div class="links">
-                <a href="#">Catálogo</a>
-                <a href="http://localhost:8000/api/documentation"
-                    >Documentation Api</a
-                >
-                <a href="#">Contacto</a>
-                <a href="http://localhost:8000/admin">Admin</a>
+                <ul>
+                    <li>
+                        <a href="#">Catálogo</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:8000/api/documentation"
+                            >Documentation Api</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="http://localhost:8000/admin">Admin</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -35,12 +45,6 @@ export default {
     display: inline-block;
 }
 
-.title,
-.links {
-    display: inline;
-    vertical-align: middle;
-}
-
 .title {
     font-size: 40px;
     font-family: "Oswald", sans-serif;
@@ -54,9 +58,11 @@ export default {
     width: 64px;
 }
 
-.links > a {
+.links li a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     color: #000;
-    padding: 0 25px;
     font-size: 20px;
     font-weight: 200;
     text-decoration: none;
