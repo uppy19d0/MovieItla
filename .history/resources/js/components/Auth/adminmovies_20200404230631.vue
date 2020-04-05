@@ -1,6 +1,7 @@
 <!--col-md-4-->
 <template>
     <main role="main" class="background">
+        <h3 class="badge badge-info">Preview</h3>
         <div class="album py-5">
             <div class="container">
                 <div class="row">
@@ -18,28 +19,31 @@
                             />
                             <div class="card-body">
                                 <div class="card-title">
-                                    <h3>
-                                        {{ movie.title }}
-                                    </h3>
+                                    <h3>{{ movie.title }}</h3>
                                 </div>
                                 <div class="card-category">
                                     {{ movie.category }}
                                 </div>
                                 <div class="card-button">
                                     <button class="btn btn-outline-info btn-sm">
-                                        <img src="/assets/jugar.png" alt="" />
+                                        <img src="/assets/jugar.png" alt />
                                         <a
-                                            :href="`http://localhost:8000/movie/${movie.id}`"
+                                            :href="`${movie.link_trailer}`"
                                             target="_blank"
+                                            >VER TRAILER</a
                                         >
-                                            VER TRAILER
-                                        </a>
                                     </button>
                                 </div>
-                               <div class="btn-admin">
-                                    <button  class="btn btn-sm btn-outline-success">
-                                        View
-                                    </button>
+                                <div class="btn-admin">
+                                    <router-link
+                                        :to="{
+                                            name: 'singleFilm',
+                                            params: { slug: movie.id },
+                                        }"
+                                        tag="button"
+                                        class="btn btn-sm btn-outline-success"
+                                        >View</router-link
+                                    >
                                     <router-link
                                         :to="{
                                             name: 'editFilm',
@@ -62,7 +66,6 @@
                         <hr />
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md-12">
                         <nav aria-label="...">
@@ -125,8 +128,8 @@
 </template>
 <script>
 import axios from "axios";
+
 export default {
-    props: ["title"],
     data() {
         return {
             movies: [],
@@ -154,7 +157,8 @@ export default {
                 prev_page_url: links.prev,
             };
             this.pagination = pagination;
-        },  deleteMovie(movie_id) {
+        },
+        deleteMovie(movie_id) {
             if (confirm("Are you sure")) {
                 axios
                     .delete("http://localhost:8000/api/movie/" + movie_id)
@@ -168,7 +172,8 @@ export default {
                         console.log(err);
                     });
             }
-        },    },
+        },
+    },
     computed: {
         pages() {
             let vm = this;
@@ -190,8 +195,21 @@ export default {
 </script>
 
 <style scoped>
+.background h3 {
+    margin-bottom: 20px;
+    margin-top: -50px;
+    font-size: 25px;
+}
 
+.background {
+    width: 1490px;
+    margin-left: -380px;
+    background-color: #fff;
+}
 
+.btn-admin {
+    margin-top: 20px;
+}
 
 .main,
 .album {

@@ -37,9 +37,15 @@
                                     </button>
                                 </div>
                                <div class="btn-admin">
-                                    <button  class="btn btn-sm btn-outline-success">
-                                        View
-                                    </button>
+                                    <router-link
+                                        :to="{
+                                            name: 'singleFilm',
+                                            params: { slug: movie.id },
+                                        }"
+                                        tag="button"
+                                        class="btn btn-sm btn-outline-success"
+                                        >View</router-link
+                                    >
                                     <router-link
                                         :to="{
                                             name: 'editFilm',
@@ -200,6 +206,7 @@ export default {
 
 hr {
     background-color: #242e37;
+      width: 1000px;
 }
 
 .page-item.active .page-link {

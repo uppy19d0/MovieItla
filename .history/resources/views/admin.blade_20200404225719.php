@@ -31,8 +31,8 @@
         </div>
     </div>
     </div id='app'>
-            <adminmovies-component class="cp2"></adminmovies-component>
-             {{-- <movies-component class="cp2" title="WATCH MOVIES"></movies-component>  --}}
+            {{-- <adminmovies-component class="cp2"></adminmovies-component> --}}
+             <movies-component class="cp2" title="WATCH MOVIES"></movies-component> 
             </div>
 </div>
 @endsection

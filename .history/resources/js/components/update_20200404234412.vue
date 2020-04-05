@@ -144,7 +144,7 @@ export default {
     };
   },
   created() {
-    let id =window.location.href.slice(34,35)
+    let id =window.location.href.slice(33,35)
     console.log(id,"my id");
     this.fetchFilm(id);
   },

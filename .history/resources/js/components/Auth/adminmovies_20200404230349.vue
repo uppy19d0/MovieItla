@@ -3,6 +3,14 @@
     <main role="main" class="background">
         <div class="album py-5">
             <div class="container">
+                <img
+                    class="logo"
+                    src="https://image.flaticon.com/icons/svg/747/747965.svg"
+                    alt=""
+                />
+                <div class="title m-b-md">
+                    {{ title }}
+                </div>
                 <div class="row">
                     <div class="mov" v-for="movie in movies" :key="movie.id">
                         <div class="cardc">
@@ -37,9 +45,15 @@
                                     </button>
                                 </div>
                                <div class="btn-admin">
-                                    <button  class="btn btn-sm btn-outline-success">
-                                        View
-                                    </button>
+                                    <router-link
+                                        :to="{
+                                            name: 'singleFilm',
+                                            params: { slug: movie.id },
+                                        }"
+                                        tag="button"
+                                        class="btn btn-sm btn-outline-success"
+                                        >View</router-link
+                                    >
                                     <router-link
                                         :to="{
                                             name: 'editFilm',
@@ -154,21 +168,8 @@ export default {
                 prev_page_url: links.prev,
             };
             this.pagination = pagination;
-        },  deleteMovie(movie_id) {
-            if (confirm("Are you sure")) {
-                axios
-                    .delete("http://localhost:8000/api/movie/" + movie_id)
-                    .then((res) => {
-                        this.movies.splice(this.movies.indexOf(movie_id), 1);
-                        alert("deleted successfully");
-                        console.log(res.data.data);
-                        this.getMovies();
-                    })
-                    .catch((err) => {
-                        console.log(err);
-                    });
-            }
-        },    },
+        },
+    },
     computed: {
         pages() {
             let vm = this;
@@ -190,8 +191,24 @@ export default {
 </script>
 
 <style scoped>
+.title,
+.logo {
+    display: inline-block;
+}
 
+.title {
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    margin: 0 0 0 0;
+    padding-left: 10px;
+    color: white;
+}
 
+.logo {
+    margin-left: 300px;
+    height: 64px;
+    width: 64px;
+}
 
 .main,
 .album {

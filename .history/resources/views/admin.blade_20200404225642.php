@@ -1,5 +1,5 @@
-@extends('layouts.app')
-{{-- <meta charset="utf-8">
+{{-- @extends('layouts.app') --}}
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- CSRF Token -->
@@ -14,7 +14,7 @@
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-<!-- Styles --> --}}
+<!-- Styles -->
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 @section('content')
 <div class="container">
@@ -31,8 +31,8 @@
         </div>
     </div>
     </div id='app'>
-            <adminmovies-component class="cp2"></adminmovies-component>
-             {{-- <movies-component class="cp2" title="WATCH MOVIES"></movies-component>  --}}
+            {{-- <adminmovies-component class="cp2"></adminmovies-component> --}}
+             <movies-component class="cp2" title="WATCH MOVIES"></movies-component> 
             </div>
 </div>
 @endsection

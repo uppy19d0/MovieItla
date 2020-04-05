@@ -144,14 +144,13 @@ export default {
     };
   },
   created() {
-    let id =window.location.href.slice(34,35)
-    console.log(id,"my id");
+    let id =window.location.href.slice(28,30)
     this.fetchFilm(id);
   },
   methods: {
     fetchFilm(id) {
       axios
-        .get("http://localhost:8000/api/movie/"+ id)
+        .get("http://localhost:8000/api/movi/"+ id)
         .then(res => {
           //console.log(res);
           this.movie = res.data;

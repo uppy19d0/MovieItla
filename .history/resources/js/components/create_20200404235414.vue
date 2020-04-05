@@ -205,15 +205,15 @@ export default {
                 .post("http://localhost:8000/api/movie", this.movie)
                 .then((res) => {
                       this.status = res.status;
-                    console.log(res);                    
-                    this.movie.title='';
-                      this.movie.description='';
-                      this.movie.category='';
-                      this.movie.image='';
-                      this.movie.link_trailer='';
-                      this.movie.launcher='';
-                      this.movie.rating=0;
-                      this.movie.cast='';
+                    console.log(res);
+                    // this.movie.title='';
+                    //   this.movie.description='';
+                    //   this.movie.category='';
+                    //   this.movie.image='';
+                    //   this.movie.link_trailer='';
+                    //   this.movie.launcher='';
+                    //   this.movie.rating=0;
+                    //   this.movie.cast='';
                 })
                 .catch((err) => {
                     this.errors = err.data.errors;

@@ -4,16 +4,19 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
+            <div class="">
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
-            </div id='app'>
-            <update-component></update-component>
-            </div>
+                </div>
         </div>
     </div>
+    </div id='app'>
+            {{-- <adminmovies-component class="cp2"></adminmovies-component> --}}
+            {{-- <!-- <movies-component class="cp2" title="WATCH MOVIES"></movies-component> --> --}}
+            </div>
 </div>
 @endsection

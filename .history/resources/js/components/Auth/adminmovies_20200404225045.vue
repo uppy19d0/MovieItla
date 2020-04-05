@@ -1,8 +1,10 @@
 <!--col-md-4-->
 <template>
     <main role="main" class="background">
+        <h3 class="badge badge-info">Preview</h3>
         <div class="album py-5">
-            <div class="container">
+             <div class="container">
+
                 <div class="row">
                     <div class="mov" v-for="movie in movies" :key="movie.id">
                         <div class="cardc">
@@ -36,27 +38,17 @@
                                         </a>
                                     </button>
                                 </div>
-                               <div class="btn-admin">
-                                    <button  class="btn btn-sm btn-outline-success">
-                                        View
-                                    </button>
+                                <!-- <div class="btn-group">
                                     <router-link
                                         :to="{
-                                            name: 'editFilm',
-                                            params: { slug: movie.id },
+                                            name: 'singleMovie',
+                                            params: { slug: movie.id }
                                         }"
                                         tag="button"
-                                        class="btn btn-sm btn-outline-primary"
-                                        >Edit</router-link
+                                        class="btn btn-sm btn-outline-secondary"
+                                        >Detail</router-link
                                     >
-                                    <button
-                                        type="button"
-                                        class="btn btn-sm btn-outline-danger"
-                                        @click="deleteMovie(movie.id)"
-                                    >
-                                        Delete
-                                    </button>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <hr />
@@ -125,8 +117,8 @@
 </template>
 <script>
 import axios from "axios";
+
 export default {
-    props: ["title"],
     data() {
         return {
             movies: [],
@@ -154,7 +146,8 @@ export default {
                 prev_page_url: links.prev,
             };
             this.pagination = pagination;
-        },  deleteMovie(movie_id) {
+        },
+        deleteMovie(movie_id) {
             if (confirm("Are you sure")) {
                 axios
                     .delete("http://localhost:8000/api/movie/" + movie_id)
@@ -168,7 +161,8 @@ export default {
                         console.log(err);
                     });
             }
-        },    },
+        },
+    },
     computed: {
         pages() {
             let vm = this;
@@ -190,8 +184,21 @@ export default {
 </script>
 
 <style scoped>
+.background h3 {
+    margin-bottom: 20px;
+    margin-top: -50px;
+    font-size: 25px;
+}
 
+.background {
+    width: 1490px;
+    margin-left: -380px;
+    background-color: #fff;
+}
 
+.btn-admin {
+    margin-top: 20px;
+}
 
 .main,
 .album {
@@ -200,6 +207,7 @@ export default {
 
 hr {
     background-color: #242e37;
+    width: 1000px;
 }
 
 .page-item.active .page-link {
