@@ -38,7 +38,7 @@
                                     <router-link
                                         :to="{
                                             name: 'singleFilm',
-                                            params: { slug: movie.id }
+                                            params: { slug: movie.id },
                                         }"
                                         tag="button"
                                         class="btn btn-sm btn-outline-success"
@@ -47,7 +47,7 @@
                                     <router-link
                                         :to="{
                                             name: 'editFilm',
-                                            params: { slug: movie.id }
+                                            params: { slug: movie.id },
                                         }"
                                         tag="button"
                                         class="btn btn-sm btn-outline-primary"
@@ -66,7 +66,6 @@
                         <hr />
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col-md-12">
                         <nav aria-label="...">
@@ -74,7 +73,7 @@
                                 <li
                                     class="page-item"
                                     :class="[
-                                        { disabled: !pagination.prev_page_url }
+                                        { disabled: !pagination.prev_page_url },
                                     ]"
                                 >
                                     <span
@@ -88,7 +87,7 @@
                                 <li
                                     class="page-item"
                                     :class="{
-                                        active: pagination.current_page == page
+                                        active: pagination.current_page == page,
                                     }"
                                     v-for="page in pages"
                                     :key="page"
@@ -108,7 +107,7 @@
                                 <li
                                     class="page-item"
                                     :class="[
-                                        { disabled: !pagination.next_page_url }
+                                        { disabled: !pagination.next_page_url },
                                     ]"
                                 >
                                     <span
@@ -135,17 +134,17 @@ export default {
         return {
             movies: [],
             pagination: {},
-            fetch_url: "http://localhost:8000"
+            fetch_url: "http://localhost:8000",
         };
     },
-    created: function() {
+    created: function () {
         this.getMovies();
     },
     methods: {
-        getMovies: function() {
+        getMovies: function () {
             var urlmovie = "api/movies";
             console.log(urlmovie);
-            axios.get(urlmovie).then(response => {
+            axios.get(urlmovie).then((response) => {
                 this.movies = response.data;
                 // this.movies.makePginate(res.data.meta,res.data.links);
             });
@@ -155,7 +154,7 @@ export default {
                 current_page: meta.current_page,
                 last_page: meta.last_page,
                 next_page_url: links.next,
-                prev_page_url: links.prev
+                prev_page_url: links.prev,
             };
             this.pagination = pagination;
         },
@@ -163,17 +162,17 @@ export default {
             if (confirm("Are you sure")) {
                 axios
                     .delete("http://localhost:8000/api/movie/" + movie_id)
-                    .then(res => {
+                    .then((res) => {
                         this.movies.splice(this.movies.indexOf(movie_id), 1);
                         alert("deleted successfully");
                         console.log(res.data.data);
                         this.getMovies();
                     })
-                    .catch(err => {
+                    .catch((err) => {
                         console.log(err);
                     });
             }
-        }
+        },
     },
     computed: {
         pages() {
@@ -183,32 +182,29 @@ export default {
                 pages.push(i);
             }
             return pages;
-        }
+        },
     },
     filters: {
         truncate: (text, length, suffix) => {
             if (!text) return "";
             text = text.toString();
             return text.substring(0, length) + suffix;
-        }
-    }
+        },
+    },
 };
 </script>
 
 <style scoped>
 .background h3 {
     margin-bottom: 20px;
-
+    margin-top: -50px;
     font-size: 25px;
 }
 
 .background {
-    margin: -950px -100px 0 500px;
+    width: 1490px;
+    margin-left: -380px;
     background-color: #fff;
-}
-
-.mov {
-    margin: 0 0px 0 25px;
 }
 
 .btn-admin {
@@ -222,6 +218,7 @@ export default {
 
 hr {
     background-color: #242e37;
+    width: 1000px;
 }
 
 .page-item.active .page-link {

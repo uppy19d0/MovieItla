@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Ver Peliculas') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -24,8 +24,10 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('Inicio', 'Inicio') }}
                 </a>
+               
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -38,6 +40,12 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                    <a class="navbar-brand" href="{{ url('/admin') }}">
+                    {{ config('Ver Pelicula','Ver Peliculas') }}
+                </a>
+                <a class="navbar-brand btn btn-info btn-sm" href="{{ url('/admin/create') }}">
+                    {{ config('Crear Pelicula','Crear Pelicula') }}
+                </a>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
@@ -77,4 +85,5 @@
         </main>
     </div>
 </body>
+
 </html>

@@ -154,8 +154,8 @@
                         <div class="alert alert-danger" v-if="status === 409">
                             {{ errors }}
                         </div>
-                        <button class="btn btn-lg btn-primary btn-block">
-                            Save Movie
+                        <button class="enviar btn btn-lg btn-primary btn-block">
+                            <a> Save Movie </a>
                         </button>
                     </form>
                 </div>
@@ -178,10 +178,10 @@ export default {
                 link_trailer: "",
                 launcher: "",
                 cast: "",
-                rating: ""
+                rating: "",
             },
             errors: [],
-            status: ""
+            status: "",
         };
     },
     methods: {
@@ -194,7 +194,7 @@ export default {
         },
         createImage(file) {
             let reader = new FileReader();
-            reader.onload = e => {
+            reader.onload = (e) => {
                 this.movie.image = e.target.result;
             };
             reader.readAsDataURL(file);
@@ -205,7 +205,7 @@ export default {
             this.errors = "";
             axios
                 .post("http://localhost:8000/api/movie", this.movie)
-                .then(res => {
+                .then((res) => {
                     console.log(res);
                     // this.movie.title='';
                     //   this.movie.description='';
@@ -216,13 +216,13 @@ export default {
                     //   this.movie.rating=0;
                     //   this.movie.cast='';
                 })
-                .catch(err => {
+                .catch((err) => {
                     this.errors = err.data.errors;
                     this.status = err.status;
                 });
             getMovies();
-        }
-    }
+        },
+    },
 };
 </script>
 
@@ -232,7 +232,7 @@ export default {
 }
 
 .all {
-    margin-left: -200px;
+    margin-left: 200px;
     background-color: #ffffff;
 }
 
@@ -242,6 +242,12 @@ export default {
 
 .all h3 {
     font-size: 25px;
+}
+
+.enviar a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
 
 label {

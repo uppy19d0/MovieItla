@@ -12,22 +12,22 @@
 
 <body>
                 <div id="app">
-                    <header-component class="cp" title="WATCH MOVIES"></header-component>
+                    <header-component class="cp"></header-component>
                     <div class="container">
-                    <movies-component class="cp2"></movies-component>
+                    <movies-component class="cp2" title="WATCH MOVIES"></movies-component>
                     </div>
                 </div>
     </div>
     <script type="text/javascript" src="js/app.js"></script>
 <style type="text/css">
-   body{ background-image: url(/assets/fondo.jpg) ;
-   }
+   /* body{ background-image: url(/assets/fondo.jpg) ;
+   } */
    .container {
        background-color: #1e1b26;
    }
 
    .cp2 {
-       margin-top: 100px;
+       margin-left: 100px;
    }
     </style>
 

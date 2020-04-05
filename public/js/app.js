@@ -2038,7 +2038,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2528,8 +2527,29 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// const btnToggle = document.querySelector(".btn");
+// btnToggle.addEventListener("click", function () {
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["title", "secondt"]
+  methods: {
+    toggleSideBar: function toggleSideBar() {
+      // this.state = !this.state;
+      // console.log(this.state, "test information");
+      var t = document.getElementById("sidebar").classList.toggle("active");
+      console.log(t, "encontre un id asi");
+    }
+  }
 });
 
 /***/ }),
@@ -2660,8 +2680,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["title"],
   data: function data() {
     return {
       movies: [],
@@ -7258,7 +7287,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.background h3[data-v-6048d354] {\r\n    margin-bottom: 20px;\r\n\r\n    font-size: 25px;\n}\n.background[data-v-6048d354] {\r\n    margin: -950px -100px 0 500px;\r\n    background-color: #fff;\n}\n.mov[data-v-6048d354] {\r\n    margin: 0 0px 0 25px;\n}\n.btn-admin[data-v-6048d354] {\r\n    margin-top: 20px;\n}\n.main[data-v-6048d354],\r\n.album[data-v-6048d354] {\r\n    background-color: #1e1b26;\n}\nhr[data-v-6048d354] {\r\n    background-color: #242e37;\n}\n.page-item.active .page-link[data-v-6048d354] {\r\n    background: #55595c;\n}\n.page-link[data-v-6048d354] {\r\n    color: #55595c;\n}\n.box-movie[data-v-6048d354] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-6048d354] {\r\n    display: inline-block;\n}\n.card-button img[data-v-6048d354] {\r\n    height: 10px;\r\n    width: 10px;\n}\n.mov[data-v-6048d354] {\r\n    background-color: #1d1a26;\r\n    color: #fff;\n}\n.card-category[data-v-6048d354] {\r\n    color: #756a6a;\r\n    margin: -15px 0 20px 0;\n}\n.card-button a[data-v-6048d354] {\r\n    font-size: 13px;\r\n    text-decoration: none;\n}\n.card-img-top[data-v-6048d354] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
+exports.push([module.i, "\n.background h3[data-v-6048d354] {\r\n    margin-bottom: 20px;\r\n    margin-top: -50px;\r\n    font-size: 25px;\n}\n.background[data-v-6048d354] {\r\n    width: 1490px;\r\n    margin-left: -380px;\r\n    background-color: #fff;\n}\n.btn-admin[data-v-6048d354] {\r\n    margin-top: 20px;\n}\n.main[data-v-6048d354],\r\n.album[data-v-6048d354] {\r\n    background-color: #1e1b26;\n}\nhr[data-v-6048d354] {\r\n    background-color: #242e37;\r\n    width: 1000px;\n}\n.page-item.active .page-link[data-v-6048d354] {\r\n    background: #55595c;\n}\n.page-link[data-v-6048d354] {\r\n    color: #55595c;\n}\n.box-movie[data-v-6048d354] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-6048d354] {\r\n    display: inline-block;\n}\n.card-button img[data-v-6048d354] {\r\n    height: 10px;\r\n    width: 10px;\n}\n.mov[data-v-6048d354] {\r\n    background-color: #1d1a26;\r\n    color: #fff;\n}\n.card-category[data-v-6048d354] {\r\n    color: #756a6a;\r\n    margin: -15px 0 20px 0;\n}\n.card-button a[data-v-6048d354] {\r\n    font-size: 13px;\r\n    text-decoration: none;\n}\n.card-img-top[data-v-6048d354] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
 
 // exports
 
@@ -7296,7 +7325,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.film-image {\r\n    width: 40%;\n}\n.all {\r\n    margin-left: -200px;\r\n    background-color: #ffffff;\n}\n.all input {\r\n    background-color: #f8f8f8;\n}\n.all h3 {\r\n    font-size: 25px;\n}\nlabel {\r\n    font-weight: bolder;\n}\r\n", ""]);
+exports.push([module.i, "\n.film-image {\r\n    width: 40%;\n}\n.all {\r\n    margin-left: 200px;\r\n    background-color: #ffffff;\n}\n.all input {\r\n    background-color: #f8f8f8;\n}\n.all h3 {\r\n    font-size: 25px;\n}\n.enviar a {\r\n    text-decoration: none;\r\n    color: black;\r\n    font-weight: bold;\n}\nlabel {\r\n    font-weight: bolder;\n}\r\n", ""]);
 
 // exports
 
@@ -7315,7 +7344,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Karla|Oswald&display=swap);", ""]);
 
 // module
-exports.push([module.i, "\n.title[data-v-798ca618],\r\n.logo[data-v-798ca618] {\r\n    margin-top: 20px;\r\n    display: inline-block;\n}\n.title[data-v-798ca618] {\r\n    font-size: 40px;\r\n    font-family: \"Oswald\", sans-serif;\r\n    margin: 0 200px 0 0px;\r\n    padding-left: 10px;\r\n    color: white;\n}\n.logo[data-v-798ca618] {\r\n    height: 64px;\r\n    width: 64px;\n}\n.links li a[data-v-798ca618] {\r\n    margin: 0;\r\n    padding: 0;\r\n    list-style: none;\r\n    color: #000;\r\n    font-size: 20px;\r\n    font-weight: 200;\r\n    text-decoration: none;\r\n    font-family: \"Karla\", sans-serif;\r\n    color: white;\n}\n.m-b-md[data-v-798ca618] {\r\n    margin-bottom: 30px;\n}\n*[data-v-798ca618] {\r\n    margin: 0px;\r\n    padding: 0px;\n}\r\n", ""]);
+exports.push([module.i, "\n*[data-v-798ca618] {\r\n    margin: 0;\r\n    padding: 0;\n}\n.sidebar[data-v-798ca618] {\r\n    position: fixed;\r\n    left: 0;\r\n    width: 250px;\r\n    height: 100%;\r\n    background-color: #010101;\r\n    transition: all 0.5s ease;\n}\n.sidebar header[data-v-798ca618] {\r\n    font-size: 22px;\r\n    color: white;\r\n    text-align: center;\r\n    line-height: 70px;\r\n    background-color: #2e2e30;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\n}\n.sidebar ul a[data-v-798ca618] {\r\n    list-style: none;\r\n    text-decoration: none;\r\n    display: block;\r\n    height: 100%;\r\n    width: 100%;\r\n    line-height: 65px;\r\n    font-size: 20px;\r\n    padding-left: 40px;\r\n    font-weight: 200;\r\n    font-family: \"Karla\", sans-serif;\r\n    color: white;\r\n    box-sizing: border-box;\r\n    border-top: 1px solid rgba(255, 255, 255, 0.1);\r\n    border-bottom: 1px solid black;\r\n    transition: 0.4s;\n}\n#sidebar.active[data-v-798ca618] {\r\n    left: 0;\n}\nul li:hover a[data-v-798ca618] {\r\n    padding-left: 50px;\r\n    background-color: #2e2e30;\n}\n#check[data-v-798ca618],\r\n#open[data-v-798ca618] {\r\n    display: none;\n}\nlabel #btn[data-v-798ca618],\r\nlabel #close[data-v-798ca618] {\r\n    position: absolute;\r\n    cursor: pointer;\r\n    background-color: white;\r\n    border-radius: 3px;\n}\nlabel #btn[data-v-798ca618] {\r\n    left: 40px;\r\n    top: 25px;\r\n    font-size: 35px;\r\n    padding: 6px 12px;\r\n    transition: all 0.5s;\n}\nlabel #close[data-v-798ca618] {\r\n    z-index: 1111;\r\n    left: 215px;\r\n    top: 17px;\r\n    font-size: 30px;\r\n    color: white;\r\n    padding: 4px 9px;\n}\r\n\r\n/* #open:checked ~ .sidebar {\r\n    left: 0;\r\n    left: 250px;\r\n    opacity: 0;\r\n    pointer-events: none;\r\n}\r\n\r\n#open:checked ~ #btn {\r\n    left: 250px;\r\n    opacity: 0;\r\n    pointer-events: none;\r\n}\r\n\r\n#check:checked ~ .sidebar {\r\n    left: 0;\r\n} */\n.m-b-md[data-v-798ca618] {\r\n    margin-bottom: 30px;\n}\n*[data-v-798ca618] {\r\n    margin: 0px;\r\n    padding: 0px;\n}\r\n", ""]);
 
 // exports
 
@@ -7334,7 +7363,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.main[data-v-d0a3c064],\r\n.album[data-v-d0a3c064] {\r\n    background-color: #1e1b26;\n}\nhr[data-v-d0a3c064] {\r\n    background-color: #242e37;\n}\n.page-item.active .page-link[data-v-d0a3c064] {\r\n    background: #55595c;\n}\n.page-link[data-v-d0a3c064] {\r\n    color: #55595c;\n}\n.box-movie[data-v-d0a3c064] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-d0a3c064] {\r\n    display: inline-block;\n}\n.card-button img[data-v-d0a3c064] {\r\n    height: 10px;\r\n    width: 10px;\n}\n.mov[data-v-d0a3c064] {\r\n    background-color: #1d1a26;\r\n    color: #fff;\n}\n.card-category[data-v-d0a3c064] {\r\n    color: #756a6a;\r\n    margin: -15px 0 20px 0;\n}\n.card-button a[data-v-d0a3c064] {\r\n    font-size: 13px;\r\n    text-decoration: none;\n}\n.card-img-top[data-v-d0a3c064] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
+exports.push([module.i, "\n.title[data-v-d0a3c064],\r\n.logo[data-v-d0a3c064] {\r\n    display: inline-block;\n}\n.title[data-v-d0a3c064] {\r\n    font-size: 40px;\r\n    font-family: \"Oswald\", sans-serif;\r\n    margin: 0 0 0 0;\r\n    padding-left: 10px;\r\n    color: white;\n}\n.logo[data-v-d0a3c064] {\r\n    margin-left: 300px;\r\n    height: 64px;\r\n    width: 64px;\n}\n.main[data-v-d0a3c064],\r\n.album[data-v-d0a3c064] {\r\n    background-color: #1e1b26;\n}\nhr[data-v-d0a3c064] {\r\n    background-color: #242e37;\n}\n.page-item.active .page-link[data-v-d0a3c064] {\r\n    background: #55595c;\n}\n.page-link[data-v-d0a3c064] {\r\n    color: #55595c;\n}\n.box-movie[data-v-d0a3c064] {\r\n    background-color: #212529;\n}\n.mov .cardc[data-v-d0a3c064] {\r\n    display: inline-block;\n}\n.card-button img[data-v-d0a3c064] {\r\n    height: 10px;\r\n    width: 10px;\n}\n.mov[data-v-d0a3c064] {\r\n    background-color: #1d1a26;\r\n    color: #fff;\n}\n.card-category[data-v-d0a3c064] {\r\n    color: #756a6a;\r\n    margin: -15px 0 20px 0;\n}\n.card-button a[data-v-d0a3c064] {\r\n    font-size: 13px;\r\n    text-decoration: none;\n}\n.card-img-top[data-v-d0a3c064] {\r\n    margin: 20px 0 0 20px;\r\n    height: 340px;\r\n    width: 240px;\r\n    border-radius: 3px;\n}\r\n", ""]);
 
 // exports
 
@@ -39644,15 +39673,7 @@ var render = function() {
                   ])
                 : _vm._e(),
               _vm._v(" "),
-              _c(
-                "button",
-                { staticClass: "btn btn-lg btn-primary btn-block" },
-                [
-                  _vm._v(
-                    "\n                        Save Movie\n                    "
-                  )
-                ]
-              )
+              _vm._m(0)
             ]
           )
         ])
@@ -39660,7 +39681,18 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      { staticClass: "enviar btn btn-lg btn-primary btn-block" },
+      [_c("a", [_vm._v(" Save Movie ")])]
+    )
+  }
+]
 render._withStripped = true
 
 
@@ -39766,19 +39798,27 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "color" }, [
     _c("div", { staticClass: "content" }, [
-      _c("img", {
-        staticClass: "logo",
-        attrs: {
-          src: "https://image.flaticon.com/icons/svg/747/747965.svg",
-          alt: ""
-        }
-      }),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "onclick",
+              rawName: "v-onclick",
+              value: _vm.toggleSideBar,
+              expression: "toggleSideBar"
+            }
+          ],
+          staticClass: "botones"
+        },
+        [
+          _c("input", { attrs: { type: "checkbox", id: "check" } }),
+          _vm._v(" "),
+          _vm._m(0)
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "title m-b-md" }, [
-        _vm._v("\n            " + _vm._s(_vm.title) + "\n        ")
-      ]),
-      _vm._v(" "),
-      _vm._m(0)
+      _vm._m(1)
     ])
   ])
 }
@@ -39787,17 +39827,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "links" }, [
+    return _c("label", { staticClass: "btn", attrs: { for: "check" } }, [
+      _c("img", {
+        attrs: { src: "/assets/menu.png", id: "btn", alt: "", srcset: "" }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "sidebar", attrs: { id: "sidebar" } }, [
+      _c("header", [_vm._v("Menú")]),
+      _vm._v(" "),
       _c("ul", [
         _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Catálogo")])]),
         _vm._v(" "),
-        _c("li", [
-          _c(
-            "a",
-            { attrs: { href: "http://localhost:8000/api/documentation" } },
-            [_vm._v("Documentation Api")]
-          )
-        ]),
+        _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Categorias")])]),
         _vm._v(" "),
         _c("li", [_c("a", { attrs: { href: "#" } }, [_vm._v("Contacto")])]),
         _vm._v(" "),
@@ -39805,6 +39851,14 @@ var staticRenderFns = [
           _c("a", { attrs: { href: "http://localhost:8000/admin" } }, [
             _vm._v("Admin")
           ])
+        ]),
+        _vm._v(" "),
+        _c("li", [
+          _c(
+            "a",
+            { attrs: { href: "http://localhost:8000/api/documentation" } },
+            [_vm._v("Documentation Api")]
+          )
         ])
       ])
     ])
@@ -39834,6 +39888,18 @@ var render = function() {
   return _c("main", { staticClass: "background", attrs: { role: "main" } }, [
     _c("div", { staticClass: "album py-5" }, [
       _c("div", { staticClass: "container" }, [
+        _c("img", {
+          staticClass: "logo",
+          attrs: {
+            src: "https://image.flaticon.com/icons/svg/747/747965.svg",
+            alt: ""
+          }
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "title m-b-md" }, [
+          _vm._v("\n                " + _vm._s(_vm.title) + "\n            ")
+        ]),
+        _vm._v(" "),
         _c(
           "div",
           { staticClass: "row" },

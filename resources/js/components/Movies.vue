@@ -3,6 +3,14 @@
     <main role="main" class="background">
         <div class="album py-5">
             <div class="container">
+                <img
+                    class="logo"
+                    src="https://image.flaticon.com/icons/svg/747/747965.svg"
+                    alt=""
+                />
+                <div class="title m-b-md">
+                    {{ title }}
+                </div>
                 <div class="row">
                     <div class="mov" v-for="movie in movies" :key="movie.id">
                         <div class="cardc">
@@ -60,7 +68,7 @@
                                 <li
                                     class="page-item"
                                     :class="[
-                                        { disabled: !pagination.prev_page_url }
+                                        { disabled: !pagination.prev_page_url },
                                     ]"
                                 >
                                     <span
@@ -74,7 +82,7 @@
                                 <li
                                     class="page-item"
                                     :class="{
-                                        active: pagination.current_page == page
+                                        active: pagination.current_page == page,
                                     }"
                                     v-for="page in pages"
                                     :key="page"
@@ -94,7 +102,7 @@
                                 <li
                                     class="page-item"
                                     :class="[
-                                        { disabled: !pagination.next_page_url }
+                                        { disabled: !pagination.next_page_url },
                                     ]"
                                 >
                                     <span
@@ -116,21 +124,22 @@
 <script>
 import axios from "axios";
 export default {
+    props: ["title"],
     data() {
         return {
             movies: [],
             pagination: {},
-            fetch_url: "http://localhost:8000"
+            fetch_url: "http://localhost:8000",
         };
     },
-    created: function() {
+    created: function () {
         this.getMovies();
     },
     methods: {
-        getMovies: function() {
+        getMovies: function () {
             var urlmovie = "api/movies";
             console.log(urlmovie);
-            axios.get(urlmovie).then(response => {
+            axios.get(urlmovie).then((response) => {
                 this.movies = response.data;
                 // this.movies.makePginate(res.data.meta,res.data.links);
             });
@@ -140,10 +149,10 @@ export default {
                 current_page: meta.current_page,
                 last_page: meta.last_page,
                 next_page_url: links.next,
-                prev_page_url: links.prev
+                prev_page_url: links.prev,
             };
             this.pagination = pagination;
-        }
+        },
     },
     computed: {
         pages() {
@@ -153,19 +162,38 @@ export default {
                 pages.push(i);
             }
             return pages;
-        }
+        },
     },
     filters: {
         truncate: (text, length, suffix) => {
             if (!text) return "";
             text = text.toString();
             return text.substring(0, length) + suffix;
-        }
-    }
+        },
+    },
 };
 </script>
 
 <style scoped>
+.title,
+.logo {
+    display: inline-block;
+}
+
+.title {
+    font-size: 40px;
+    font-family: "Oswald", sans-serif;
+    margin: 0 0 0 0;
+    padding-left: 10px;
+    color: white;
+}
+
+.logo {
+    margin-left: 300px;
+    height: 64px;
+    width: 64px;
+}
+
 .main,
 .album {
     background-color: #1e1b26;
