@@ -30,6 +30,7 @@ class HomeController extends Controller
     }
 
     public function update($id){
+
         return view('update')->with($id);
     }
 

@@ -37,7 +37,7 @@
                                     <button class="btn btn-outline-info btn-sm">
                                         <img src="/assets/jugar.png" alt="" />
                                         <a
-                                            :href="`http://localhost:8000/movie/${movie.id}`"
+                                            :href="`${movie.link_trailer}`"
                                             target="_blank"
                                         >
                                             VER TRAILER

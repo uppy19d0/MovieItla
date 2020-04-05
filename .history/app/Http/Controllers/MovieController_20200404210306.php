@@ -64,10 +64,4 @@ class MovieController extends Controller
             return response()->json('no exist');
         return response()->json(null);
     }
-
-    //Vista
-
-    public function detail($id){
-        return view('details')->with($id);
-    }
 }

@@ -29,8 +29,9 @@ class HomeController extends Controller
         return view('createmovie');
     }
 
-    public function update($id){
-        return view('update')->with($id);
+    public function update(){
+
+        return view('update');
     }
 
 }

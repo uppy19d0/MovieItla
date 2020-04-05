@@ -40,6 +40,7 @@
               <p>{{movie.description}}</p>
             </div>
           </div>
+         ~~~~ <a>https://www.youtube.com/embed/{{movie.link_trailer}}</a>
    <iframe width="600" height="400" :src="movie.link_trailer " frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>

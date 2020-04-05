@@ -26,11 +26,7 @@ class HomeController extends Controller
         return view('admin');
     }
     public function create(){
-        return view('createmovie');
-    }
-
-    public function update($id){
-        return view('update')->with($id);
+        return vieW('createmovie');
     }
 
 }
