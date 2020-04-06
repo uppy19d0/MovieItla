@@ -140,7 +140,7 @@ form {
 .rrss {
     margin-left: 15px;
     background-color: #222425;
-    width: 601px;
+    width: 600px;
 }
 
 .botones {

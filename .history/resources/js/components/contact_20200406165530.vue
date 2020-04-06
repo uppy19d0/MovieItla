@@ -53,7 +53,7 @@
             <mapa-component></mapa-component>
             <div class="rrss card shadow p-3 mb-5">
                 <h4><kbd>Siguenos en: </kbd></h4>
-                <div class="botones card-body">
+                <div class="botones card-body shadow p-3 mb-5">
                     <a class="btn" href="#">
                         Instagram:
                         <img src="/assets/instagram.png" alt="" />
@@ -140,15 +140,10 @@ form {
 .rrss {
     margin-left: 15px;
     background-color: #222425;
-    width: 601px;
+    width: 605px;
 }
 
 .botones {
     background-color: white;
-    border-radius: 5px;
-}
-
-.botones img {
-    padding-left: 10px;
 }
 </style>

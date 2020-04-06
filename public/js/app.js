@@ -2190,7 +2190,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-<<<<<<< HEAD
 //
 //
 //
@@ -2231,24 +2230,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
-=======
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -2262,8 +2243,8 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       this.errors = {};
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/send-main', this.fields).then(function (response) {
-        alert('Mensaje de solictud de colar nueva pleicula enviando!');
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/send-main", this.fields).then(function (response) {
+        alert("Mensaje de solictud de colar nueva pleicula enviando!");
       })["catch"](function (error) {
         if (error.response.status === 422) {
           _this.errors = error.response.data.errors || {};
@@ -2272,7 +2253,6 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
->>>>>>> fc0eae559e41adb59d5e619e4a9d6ec074fe7763
 
 /***/ }),
 
@@ -2730,7 +2710,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -7785,11 +7764,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-<<<<<<< HEAD
-exports.push([module.i, "\n.formulario[data-v-768395a5] {\r\n    display: inline;\n}\n.mapa[data-v-768395a5] {\r\n    /* justify-content: flex-end; */\r\n    margin-right: 900px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px auto;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5] {\r\n    background-color: black;\n}\r\n", ""]);
-=======
-exports.push([module.i, "\n.formulario[data-v-768395a5]{\r\ndisplay: inline;\n}\n.mapa[data-v-768395a5] {\r\n    /* justify-content: flex-end; */\r\n    margin-right: 900px;\n}\n.screen[data-v-768395a5]{\r\n    margin-left: 280px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px auto;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5]{\r\n    background-color: black;\n}\r\n", ""]);
->>>>>>> fc0eae559e41adb59d5e619e4a9d6ec074fe7763
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .formulario {\r\n    display: inline;\r\n} */\r\n/* .mapa {\r\n    /* justify-content: flex-end; \r\n    margin-right: 100px;\r\n} */\n.screen[data-v-768395a5] {\r\n    margin-left: 280px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px 0 0 60px;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5] {\r\n    margin-left: 550px;\r\n    margin-top: -485px;\r\n    margin-bottom: 200px;\n}\n.rrss[data-v-768395a5] {\r\n    margin-left: 15px;\r\n    background-color: #222425;\r\n    width: 601px;\n}\n.botones[data-v-768395a5] {\r\n    background-color: white;\r\n    border-radius: 5px;\n}\n.botones img[data-v-768395a5] {\r\n    padding-left: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -7884,7 +7859,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.cards{\r\n   /* box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px; */\r\n   background-color: black;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.cards {\r\n    /* box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px; */\n}\r\n", ""]);
 
 // exports
 
@@ -39955,33 +39930,15 @@ var render = function() {
           _vm._v(" "),
           _vm.errors && _vm.errors.name
             ? _c("div", { staticClass: "text-danger" }, [
-                _vm._v(_vm._s(_vm.errors.name[0]))
+                _vm._v(
+                  "\n                " +
+                    _vm._s(_vm.errors.name[0]) +
+                    "\n            "
+                )
               ])
             : _vm._e()
         ]),
         _vm._v(" "),
-<<<<<<< HEAD
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "mapa" }, [
-            _c("h4", [_c("kbd", [_vm._v("Nuestra ubicacion ")])]),
-            _vm._v(" "),
-            _c("iframe", {
-              staticStyle: { border: "0" },
-              attrs: {
-                src:
-                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.451692760507!2d-69.95642808980402!3d18.47543788323274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e1db000001%3A0x2cfc83dbd085981d!2sPlaza%20Central!5e0!3m2!1ses-419!2sdo!4v1586096297124!5m2!1ses-419!2sdo",
-                width: "600",
-                height: "300",
-                frameborder: "0",
-                allowfullscreen: "",
-                "aria-hidden": "false",
-                tabindex: "0"
-              }
-            })
-          ])
-        ])
-      ])
-=======
         _c("div", { staticClass: "form-group" }, [
           _c("label", { attrs: { for: "name" } }, [
             _vm._v("Nombre de la Pelicula")
@@ -40016,7 +39973,11 @@ var render = function() {
           _vm._v(" "),
           _vm.errors && _vm.errors.pelicula
             ? _c("div", { staticClass: "text-danger" }, [
-                _vm._v(_vm._s(_vm.errors.pelicula[0]))
+                _vm._v(
+                  "\n                " +
+                    _vm._s(_vm.errors.pelicula[0]) +
+                    "\n            "
+                )
               ])
             : _vm._e()
         ]),
@@ -40048,7 +40009,11 @@ var render = function() {
           _vm._v(" "),
           _vm.errors && _vm.errors.message
             ? _c("div", { staticClass: "text-danger" }, [
-                _vm._v(_vm._s(_vm.errors.message[0]))
+                _vm._v(
+                  "\n                " +
+                    _vm._s(_vm.errors.message[0]) +
+                    "\n            "
+                )
               ])
             : _vm._e()
         ]),
@@ -40059,6 +40024,13 @@ var render = function() {
           [_vm._v("Send message")]
         )
       ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "container" },
+      [_c("mapa-component"), _vm._v(" "), _vm._m(1)],
+      1
     )
   ])
 }
@@ -40069,7 +40041,31 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
       _c("h3", [_vm._v("Solicitud De Pelicula")])
->>>>>>> fc0eae559e41adb59d5e619e4a9d6ec074fe7763
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "rrss card shadow p-3 mb-5" }, [
+      _c("h4", [_c("kbd", [_vm._v("Siguenos en: ")])]),
+      _vm._v(" "),
+      _c("div", { staticClass: "botones card-body" }, [
+        _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
+          _vm._v("\n                    Instagram:\n                    "),
+          _c("img", { attrs: { src: "/assets/instagram.png", alt: "" } })
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
+          _vm._v("\n                    Twitter:\n                    "),
+          _c("img", { attrs: { src: "/assets/twitter.png", alt: "" } })
+        ]),
+        _vm._v(" "),
+        _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
+          _vm._v("\n                    Youtube:\n                    "),
+          _c("img", { attrs: { src: "/assets/youtube.png", alt: "" } })
+        ])
+      ])
     ])
   }
 ]
@@ -40800,13 +40796,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-sm-8" }, [
-      _c("div", { staticClass: "card cards" }, [
-        _c("div", { staticClass: "card-header" }, [
-          _c("h4", [_c("kbd", [_vm._v("Nuestra ubicacion ")])])
-        ]),
+    return _c("div", { staticClass: "col-sm-5" }, [
+      _c("div", {}, [
+        _c("h4", [_c("kbd", [_vm._v("Nuestra ubicacion ")])]),
         _vm._v(" "),
-        _c("div", { staticClass: "card-body" }, [
+        _c("div", {}, [
           _c("iframe", {
             staticStyle: { border: "0" },
             attrs: {

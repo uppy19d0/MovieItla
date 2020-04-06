@@ -50,24 +50,8 @@
             <button type="submit" class="btn btn-primary">Send message</button>
         </form>
         <div class="container">
+            <div class="card"></div>
             <mapa-component></mapa-component>
-            <div class="rrss card shadow p-3 mb-5">
-                <h4><kbd>Siguenos en: </kbd></h4>
-                <div class="botones card-body">
-                    <a class="btn" href="#">
-                        Instagram:
-                        <img src="/assets/instagram.png" alt="" />
-                    </a>
-                    <a class="btn" href="#">
-                        Twitter:
-                        <img src="/assets/twitter.png" alt="" />
-                    </a>
-                    <a class="btn" href="#">
-                        Youtube:
-                        <img src="/assets/youtube.png" alt="" />
-                    </a>
-                </div>
-            </div>
         </div>
     </div>
 </template>
@@ -77,7 +61,7 @@ export default {
     data() {
         return {
             fields: {},
-            errors: {}
+            errors: {},
         };
     },
     methods: {
@@ -85,34 +69,34 @@ export default {
             this.errors = {};
             axios
                 .post("/send-main", this.fields)
-                .then(response => {
+                .then((response) => {
                     alert(
                         "Mensaje de solictud de colar nueva pleicula enviando!"
                     );
                 })
-                .catch(error => {
+                .catch((error) => {
                     if (error.response.status === 422) {
                         this.errors = error.response.data.errors || {};
                     }
                 });
-        }
-    }
+        },
+    },
 };
 </script>
 
 <style scoped>
-/* .formulario {
+.formulario {
     display: inline;
-} */
-/* .mapa {
-    /* justify-content: flex-end; 
-    margin-right: 100px;
-} */
+}
+.mapa {
+    /* justify-content: flex-end; */
+    margin-right: 900px;
+}
 .screen {
     margin-left: 280px;
 }
 form {
-    margin: 90px 0 0 60px;
+    margin: 90px auto;
     padding: 50px;
     color: black;
     width: 400px;
@@ -130,25 +114,7 @@ form {
     padding: 9px;
     width: 280px;
 }
-
 .container {
-    margin-left: 550px;
-    margin-top: -485px;
-    margin-bottom: 200px;
-}
-
-.rrss {
-    margin-left: 15px;
-    background-color: #222425;
-    width: 601px;
-}
-
-.botones {
-    background-color: white;
-    border-radius: 5px;
-}
-
-.botones img {
-    padding-left: 10px;
+    background-color: black;
 }
 </style>

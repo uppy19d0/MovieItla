@@ -55,15 +55,12 @@
                 <h4><kbd>Siguenos en: </kbd></h4>
                 <div class="botones card-body">
                     <a class="btn" href="#">
-                        Instagram:
                         <img src="/assets/instagram.png" alt="" />
                     </a>
                     <a class="btn" href="#">
-                        Twitter:
                         <img src="/assets/twitter.png" alt="" />
                     </a>
                     <a class="btn" href="#">
-                        Youtube:
                         <img src="/assets/youtube.png" alt="" />
                     </a>
                 </div>
@@ -140,15 +137,10 @@ form {
 .rrss {
     margin-left: 15px;
     background-color: #222425;
-    width: 601px;
+    width: 605px;
 }
 
 .botones {
     background-color: white;
-    border-radius: 5px;
-}
-
-.botones img {
-    padding-left: 10px;
 }
 </style>
