@@ -2243,6 +2243,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2908,20 +2909,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -7734,7 +7721,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.formulario[data-v-768395a5]{\r\ndisplay: inline;\n}\n.mapa[data-v-768395a5] {\r\n    /* justify-content: flex-end; */\r\n    background-color: black;\r\n    margin-right: 900px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px auto;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5]{\r\n    justify-content: center;\n}\r\n", ""]);
+exports.push([module.i, "\n.formulario[data-v-768395a5] {\r\n    display: inline;\n}\n.mapa[data-v-768395a5] {\r\n    /* justify-content: flex-end; */\r\n    margin-right: 900px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px auto;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5] {\r\n    background-color: black;\n}\r\n", ""]);
 
 // exports
 
@@ -39904,22 +39891,24 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "mapa" }, [
-          _c("h4", [_c("kbd", [_vm._v("Nuestra ubicacion ")])]),
-          _vm._v(" "),
-          _c("iframe", {
-            staticStyle: { border: "0" },
-            attrs: {
-              src:
-                "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.451692760507!2d-69.95642808980402!3d18.47543788323274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e1db000001%3A0x2cfc83dbd085981d!2sPlaza%20Central!5e0!3m2!1ses-419!2sdo!4v1586096297124!5m2!1ses-419!2sdo",
-              width: "600",
-              height: "300",
-              frameborder: "0",
-              allowfullscreen: "",
-              "aria-hidden": "false",
-              tabindex: "0"
-            }
-          })
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "mapa" }, [
+            _c("h4", [_c("kbd", [_vm._v("Nuestra ubicacion ")])]),
+            _vm._v(" "),
+            _c("iframe", {
+              staticStyle: { border: "0" },
+              attrs: {
+                src:
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.451692760507!2d-69.95642808980402!3d18.47543788323274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e1db000001%3A0x2cfc83dbd085981d!2sPlaza%20Central!5e0!3m2!1ses-419!2sdo!4v1586096297124!5m2!1ses-419!2sdo",
+                width: "600",
+                height: "300",
+                frameborder: "0",
+                allowfullscreen: "",
+                "aria-hidden": "false",
+                tabindex: "0"
+              }
+            })
+          ])
         ])
       ])
     ])
@@ -40903,7 +40892,7 @@ var render = function() {
                   ],
                   staticClass: "form-control",
                   class: _vm.errors.title ? "is-invalid" : "",
-                  attrs: { type: "text", placeholder: "Film Name" },
+                  attrs: { type: "text", placeholder: "Movie Title" },
                   domProps: { value: _vm.movie.title },
                   on: {
                     input: function($event) {
@@ -40983,7 +40972,7 @@ var render = function() {
                   ],
                   staticClass: "form-control",
                   class: _vm.errors.cast ? "is-invalid" : "",
-                  attrs: { type: "text", placeholder: "Genre" },
+                  attrs: { type: "text", placeholder: "Cast" },
                   domProps: { value: _vm.movie.cast },
                   on: {
                     input: function($event) {
@@ -54227,8 +54216,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\MovieItla\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
