@@ -10,7 +10,7 @@
         "/movies": {
             "get": {
                 "tags": [
-                    "Movie"
+                    "Movies"
                 ],
                 "summary": "Movies list ",
                 "responses": {
@@ -23,7 +23,7 @@
         "/movie": {
             "post": {
                 "tags": [
-                    "Movie"
+                    "Movies"
                 ],
                 "summary": "Create new Movie",
                 "description": "Return a Movie",
@@ -62,10 +62,24 @@
                         "description": "The launcher of movie",
                         "required": true,
                         "type": "string"
+                    },
+                    {
+                        "name": "Cast",
+                        "in": "query",
+                        "description": "The Casts of movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Rating",
+                        "in": "query",
+                        "description": "The Rating of movie",
+                        "required": true,
+                        "type": "number"
                     }
                 ],
                 "responses": {
-                    "200": {
+                    "201": {
                         "description": "OK"
                     },
                     "400": {
@@ -77,9 +91,18 @@
         "/movie/{id}": {
             "get": {
                 "tags": [
-                    "Movie"
+                    "Movies"
                 ],
                 "summary": "Get Movies Id",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "id of movie",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "successful operation"
@@ -88,11 +111,18 @@
             },
             "put": {
                 "tags": [
-                    "Movie"
+                    "Movies"
                 ],
                 "summary": "Update Movie",
                 "description": "Return a Movie",
                 "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "id of movie",
+                        "required": true,
+                        "type": "integer"
+                    },
                     {
                         "name": "title",
                         "in": "query",
@@ -127,6 +157,20 @@
                         "description": "The launcher of movie",
                         "required": true,
                         "type": "string"
+                    },
+                    {
+                        "name": "Cast",
+                        "in": "query",
+                        "description": "The Casts of movie",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "Rating",
+                        "in": "query",
+                        "description": "The Rating of movie",
+                        "required": true,
+                        "type": "number"
                     }
                 ],
                 "responses": {
@@ -142,9 +186,18 @@
         "/movies/{id}": {
             "delete": {
                 "tags": [
-                    "Movie"
+                    "Movies"
                 ],
                 "summary": "Delete Movies ",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "query",
+                        "description": "id of movie",
+                        "required": true,
+                        "type": "integer"
+                    }
+                ],
                 "responses": {
                     "200": {
                         "description": "successful operation"

@@ -2241,6 +2241,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -7731,7 +7733,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.formulario[data-v-768395a5],\r\n.mapa[data-v-768395a5] {\r\n    display: inline;\n}\nform[data-v-768395a5] {\r\n    margin: 90px auto;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 300px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\r\n", ""]);
+exports.push([module.i, "\n.formulario[data-v-768395a5]{\r\ndisplay: inline;\n}\n.mapa[data-v-768395a5] {\r\n    /* justify-content: flex-end; */\r\n    background-color: black;\r\n    margin-right: 900px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px auto;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5]{\r\n    justify-content: center;\n}\r\n", ""]);
 
 // exports
 
@@ -39812,110 +39814,112 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "all" }, [
-      _c("div", { staticClass: "formulario" }, [
-        _c("form", { attrs: { action: "", method: "post" } }, [
-          _c("div", [
-            _c("label", { attrs: { for: "nombre" } }, [_vm._v("Nombre")]),
-            _c("br"),
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "all" }, [
+        _c("div", { staticClass: "formulario" }, [
+          _c("form", { attrs: { action: "", method: "post" } }, [
+            _c("div", [
+              _c("label", { attrs: { for: "nombre" } }, [_vm._v("Nombre")]),
+              _c("br"),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "campo",
+                attrs: {
+                  type: "text",
+                  name: "Nombre",
+                  id: "nombre",
+                  placeholder: "Ej:Maria"
+                }
+              })
+            ]),
             _vm._v(" "),
-            _c("input", {
-              staticClass: "campo",
-              attrs: {
-                type: "text",
-                name: "Nombre",
-                id: "nombre",
-                placeholder: "ej. Maria"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "direc" } }, [_vm._v("Direccion")]),
-            _c("br"),
+            _c("div", [
+              _c("label", { attrs: { for: "direc" } }, [_vm._v("Direccion")]),
+              _c("br"),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "campo",
+                attrs: {
+                  type: "text",
+                  name: "Direccion",
+                  id: "direc",
+                  placeholder: "Ej: calle lugar #00 Sector Lugar"
+                }
+              })
+            ]),
             _vm._v(" "),
-            _c("input", {
-              staticClass: "campo",
-              attrs: {
-                type: "text",
-                name: "Direccion",
-                id: "direc",
-                placeholder: "ej. calle lugar #00 Sector Lugar"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "telef" } }, [_vm._v("Telefono")]),
-            _c("br"),
+            _c("div", [
+              _c("label", { attrs: { for: "telef" } }, [_vm._v("Telefono")]),
+              _c("br"),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "campo",
+                attrs: {
+                  type: "tel",
+                  name: "Telefono",
+                  id: "telef",
+                  placeholder: "ej: 809-000-0000"
+                }
+              })
+            ]),
             _vm._v(" "),
-            _c("input", {
-              staticClass: "campo",
-              attrs: {
-                type: "tel",
-                name: "Telefono",
-                id: "telef",
-                placeholder: "ej. 809-000-0000"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "email" } }, [_vm._v("E-mail")]),
-            _c("br"),
+            _c("div", [
+              _c("label", { attrs: { for: "email" } }, [_vm._v("E-mail")]),
+              _c("br"),
+              _vm._v(" "),
+              _c("input", {
+                staticClass: "campo",
+                attrs: {
+                  type: "email",
+                  name: "Email",
+                  id: "email",
+                  placeholder: "ej: correo@gmail.com"
+                }
+              })
+            ]),
             _vm._v(" "),
-            _c("input", {
-              staticClass: "campo",
-              attrs: {
-                type: "email",
-                name: "Email",
-                id: "email",
-                placeholder: "ej. correo@gmail.com"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", [
-            _c("label", { attrs: { for: "com" } }, [_vm._v("Comentarios")]),
-            _c("br"),
+            _c("div", [
+              _c("label", { attrs: { for: "com" } }, [_vm._v("Comentarios")]),
+              _c("br"),
+              _vm._v(" "),
+              _c("textarea", {
+                staticClass: "campo",
+                attrs: {
+                  name: "Comentarios",
+                  id: "com",
+                  rows: "10",
+                  cols: "30",
+                  placeholder: "Escribe aqui tu comentario"
+                }
+              })
+            ]),
             _vm._v(" "),
-            _c("textarea", {
-              staticClass: "campo",
-              attrs: {
-                name: "Comentarios",
-                id: "com",
-                rows: "10",
-                cols: "30",
-                placeholder: "Escribe aqui tu comentario"
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", [
-            _c("input", {
-              staticClass: "btn btn-primary",
-              attrs: { type: "submit", value: "Enviar datos" }
-            })
+            _c("div", [
+              _c("input", {
+                staticClass: "btn btn-primary",
+                attrs: { type: "submit", value: "Enviar datos" }
+              })
+            ])
           ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "mapa" }, [
-        _c("h4", [_vm._v("Nuestra ubicacion")]),
+        ]),
         _vm._v(" "),
-        _c("iframe", {
-          staticStyle: { border: "0" },
-          attrs: {
-            src:
-              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.451692760507!2d-69.95642808980402!3d18.47543788323274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e1db000001%3A0x2cfc83dbd085981d!2sPlaza%20Central!5e0!3m2!1ses-419!2sdo!4v1586096297124!5m2!1ses-419!2sdo",
-            width: "400",
-            height: "300",
-            frameborder: "0",
-            allowfullscreen: "",
-            "aria-hidden": "false",
-            tabindex: "0"
-          }
-        })
+        _c("div", { staticClass: "mapa" }, [
+          _c("h4", [_c("kbd", [_vm._v("Nuestra ubicacion ")])]),
+          _vm._v(" "),
+          _c("iframe", {
+            staticStyle: { border: "0" },
+            attrs: {
+              src:
+                "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30273.451692760507!2d-69.95642808980402!3d18.47543788323274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89e1db000001%3A0x2cfc83dbd085981d!2sPlaza%20Central!5e0!3m2!1ses-419!2sdo!4v1586096297124!5m2!1ses-419!2sdo",
+              width: "600",
+              height: "300",
+              frameborder: "0",
+              allowfullscreen: "",
+              "aria-hidden": "false",
+              tabindex: "0"
+            }
+          })
+        ])
       ])
     ])
   }
@@ -53357,18 +53361,16 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js"); // import StarRating from "vue-star-rating";
-// Vue.component("vue-stars", StarRating.default);
-
+window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
 Vue.component("create-component", __webpack_require__(/*! ./components/create.vue */ "./resources/js/components/create.vue")["default"]);
 Vue.component("header-component", __webpack_require__(/*! ./components/header.vue */ "./resources/js/components/header.vue")["default"]);
 Vue.component("movies-component", __webpack_require__(/*! ./components/movies.vue */ "./resources/js/components/movies.vue")["default"]);
 Vue.component("details-component", __webpack_require__(/*! ./components/detail.vue */ "./resources/js/components/detail.vue")["default"]);
 Vue.component("update-component", __webpack_require__(/*! ./components/update.vue */ "./resources/js/components/update.vue")["default"]);
-Vue.component("adminmovies-component", __webpack_require__(/*! ./components/Auth/adminmovies.vue */ "./resources/js/components/Auth/adminmovies.vue")["default"]);
 Vue.component("contact-component", __webpack_require__(/*! ./components/contact.vue */ "./resources/js/components/contact.vue")["default"]);
-Vue.component("app-component", __webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue")["default"]);
 Vue.component("footer-component", __webpack_require__(/*! ./components/footer.vue */ "./resources/js/components/footer.vue")["default"]);
+Vue.component("adminmovies-component", __webpack_require__(/*! ./components/Auth/adminmovies.vue */ "./resources/js/components/Auth/adminmovies.vue")["default"]);
+Vue.component("app-component", __webpack_require__(/*! ./components/app.vue */ "./resources/js/components/app.vue")["default"]);
 var app = new Vue({
   el: "#app"
 });
@@ -54203,8 +54205,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\MovieItla\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
