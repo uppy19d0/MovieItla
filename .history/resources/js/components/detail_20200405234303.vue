@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="aja col-md-12 shadow p-3 mb-5">
+            <div class="aja col-md-12">
                 <iframe
                     width="1100"
                     height="500"
@@ -21,36 +21,25 @@
                     />
                 </div>
                 <div class="this col-md-7">
-                    <h1 class="shadow p-3 mb-5">
-                        {{ this.movie.title }}
-                    </h1>
+                    <h1>{{ this.movie.title }}</h1>
                     <hr />
                     <h4>Descripción</h4>
                     <p>{{ movie.description }}</p>
                     <div class="row">
                         <div class="col-md-3">
-                            <span class="meta-title badge badge-pill badge-info"
-                                >Release Date:</span
-                            ><br />
+                            <span class="meta-title">Release Date:</span>
                             <span class="meta-text">{{ movie.launcher }}</span>
                         </div>
-                        <div class="col-md-7">
-                            <span class="meta-title badge badge-pill badge-info"
-                                >Category:</span
-                            >
-                            <br />
+                        <div class="col-md-3">
+                            <span class="meta-title">Category:</span>
                             <span class="meta-text">{{ movie.category }}</span>
                         </div>
                         <div class="col-md-3">
-                            <span class="meta-title badge badge-pill badge-info"
-                                >Rating:</span
-                            ><br />
+                            <span class="meta-title">Rating:</span>
                             <span class="meta-text">{{ movie.rating }}</span>
                         </div>
                         <div class="col-md-3">
-                            <span class="meta-title badge badge-pill badge-info"
-                                >Cast:</span
-                            ><br />
+                            <span class="meta-title">Cast:</span>
                             <span class="meta-text">{{ movie.cast }}</span>
                         </div>
                     </div>
@@ -88,6 +77,7 @@ export default {
 <style scoped>
 .container {
     background-color: #1e1b26;
+    margin-left: 250px;
     height: 800px;
     width: 2900px;
     color: white;
@@ -95,17 +85,10 @@ export default {
 
 .contenido {
     background-color: #1e1b26;
-    width: 2000px;
-}
-
-.aja {
-    margin-top: 30px;
-    background-color: #201d27;
 }
 
 .row img {
     margin-left: 30px;
-    margin-bottom: 100px;
     height: 400px;
     width: 300px;
 }
@@ -119,6 +102,7 @@ export default {
     margin-top: 40px;
     margin-left: 100px;
 }
+
 .card {
     box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px;
 }

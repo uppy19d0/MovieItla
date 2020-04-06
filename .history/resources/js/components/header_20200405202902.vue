@@ -86,7 +86,7 @@ export default {
 .sidebar {
     position: fixed;
     left: 0px;
-    width: 255px;
+    width: 235px;
     height: 100%;
     background-color: #222425;
     transition: all 0.5s ease;
@@ -108,7 +108,7 @@ export default {
     height: 100%;
     width: 100%;
     line-height: 65px;
-    font-size: 20px;
+    font-size: 16px;
     padding-left: 40px;
     font-weight: 200;
     font-family: "Karla", sans-serif;
@@ -123,9 +123,14 @@ export default {
 }
 
 ul li:hover a {
-    padding-left: 40px;
-    border-left: 5px solid #4aa0e6;
+    padding-left: 50px;
     background-color: #283944;
+}
+
+ul li:active {
+    border-left-style: solid;
+    border-left-color: #4aa0e6;
+    border-left-width: 5px;
 }
 
 #check,

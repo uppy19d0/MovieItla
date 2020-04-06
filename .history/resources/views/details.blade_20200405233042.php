@@ -21,17 +21,15 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body>
 <div id="app">
     <details-component class="color"></details-component>
     </div>
 
-    <style type="text/css">
-#app {
+</body>
+<style>
+.color {
     background-color: #1e1b26;
 }
     </style>
-</body>
-
 </html>
 

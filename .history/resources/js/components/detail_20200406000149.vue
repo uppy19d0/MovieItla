@@ -21,7 +21,7 @@
                     />
                 </div>
                 <div class="this col-md-7">
-                    <h1 class="shadow p-3 mb-5">
+                    <h1 class="badge badge-secondary">
                         {{ this.movie.title }}
                     </h1>
                     <hr />
@@ -95,7 +95,6 @@ export default {
 
 .contenido {
     background-color: #1e1b26;
-    width: 2000px;
 }
 
 .aja {
@@ -119,6 +118,7 @@ export default {
     margin-top: 40px;
     margin-left: 100px;
 }
+
 .card {
     box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px;
 }

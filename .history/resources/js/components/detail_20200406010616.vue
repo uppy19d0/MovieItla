@@ -94,8 +94,8 @@ export default {
 }
 
 .contenido {
-    background-color: #1e1b26;
-    width: 2000px;
+    background-color: #6e1b26;
+    width: 20000px;
 }
 
 .aja {

@@ -12,7 +12,7 @@
                 ></iframe>
             </div>
 
-            <div class="contenido row">
+            <div class="contenido row ty">
                 <div class="img">
                     <img
                         class="img-top"
@@ -95,7 +95,6 @@ export default {
 
 .contenido {
     background-color: #1e1b26;
-    width: 2000px;
 }
 
 .aja {
@@ -118,6 +117,9 @@ export default {
 .this {
     margin-top: 40px;
     margin-left: 100px;
+}
+.ty {
+    width: 2000px;
 }
 .card {
     box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px;

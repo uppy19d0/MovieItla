@@ -94,7 +94,7 @@ export default {
 }
 
 .contenido {
-    background-color: #1e1b26;
+    background-color: #2e1b26;
     width: 2000px;
 }
 
