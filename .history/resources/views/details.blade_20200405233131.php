@@ -26,7 +26,7 @@
     </div>
 
     <style type="text/css">
-#app {
+.color {
     background-color: #1e1b26;
 }
     </style>

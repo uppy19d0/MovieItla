@@ -2563,6 +2563,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -7769,7 +7770,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-742d4c48] {\r\n    margin-bottom: 22px;\r\n    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px;\n}\n.commenter-name[data-v-742d4c48] {\r\n    font-weight: bold;\n}\nspan.moment-ago[data-v-742d4c48] {\r\n    font-style: italic;\n}\r\n", ""]);
+exports.push([module.i, "\n.container[data-v-742d4c48] {\r\n    background-color: #1e1b26;\r\n    height: 800px;\r\n    width: 2900px;\r\n    color: white;\n}\n.contenido[data-v-742d4c48] {\r\n    background-color: #1e1b26;\r\n    width: 2000px;\n}\n.aja[data-v-742d4c48] {\r\n    margin-top: 30px;\r\n    background-color: #201d27;\n}\n.row img[data-v-742d4c48] {\r\n    margin-left: 30px;\r\n    margin-bottom: 100px;\r\n    height: 400px;\r\n    width: 300px;\n}\n.img[data-v-742d4c48],\r\n.this[data-v-742d4c48] {\r\n    display: inline;\n}\n.this[data-v-742d4c48] {\r\n    margin-top: 40px;\r\n    margin-left: 100px;\n}\n.card[data-v-742d4c48] {\r\n    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px;\n}\n.commenter-name[data-v-742d4c48] {\r\n    font-weight: bold;\n}\nspan.moment-ago[data-v-742d4c48] {\r\n    font-style: italic;\n}\r\n", ""]);
 
 // exports
 
@@ -7807,7 +7808,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Karla|Oswald&display=swap);", ""]);
 
 // module
-exports.push([module.i, "\n*[data-v-798ca618] {\r\n    margin: 0;\r\n    padding: 0;\n}\n.logo[data-v-798ca618] {\r\n    margin-left: 5px;\r\n    height: 64px;\r\n    width: 64px;\r\n    vertical-align: top;\n}\n.sidebar[data-v-798ca618] {\r\n    position: fixed;\r\n    left: 0px;\r\n    width: 235px;\r\n    height: 100%;\r\n    background-color: #222425;\r\n    transition: all 0.5s ease;\n}\n.sidebar header[data-v-798ca618] {\r\n    font-size: 22px;\r\n    color: white;\r\n    text-align: center;\r\n    line-height: 70px;\r\n    margin-bottom: 40px;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\n}\n.sidebar ul a[data-v-798ca618] {\r\n    list-style: none;\r\n    text-decoration: none;\r\n    display: block;\r\n    height: 100%;\r\n    width: 100%;\r\n    line-height: 65px;\r\n    font-size: 16px;\r\n    padding-left: 40px;\r\n    font-weight: 200;\r\n    font-family: \"Karla\", sans-serif;\r\n    color: white;\r\n    box-sizing: border-box;\r\n    border-bottom: 1px solid rgba(51, 43, 43, 0.432);\r\n    transition: 0.4s;\n}\n#sidebar.active[data-v-798ca618] {\r\n    left: 0;\n}\nul li:hover a[data-v-798ca618] {\r\n    padding-left: 50px;\r\n    background-color: #2e2e30;\n}\nul li[data-v-798ca618]:active {\r\n    border-left-style: solid;\r\n    border-left-color: #4aa0e6;\r\n    border-left-width: 5px;\n}\n#check[data-v-798ca618],\r\n#open[data-v-798ca618] {\r\n    display: none;\n}\nlabel #btn[data-v-798ca618],\r\nlabel #close[data-v-798ca618] {\r\n    position: absolute;\r\n    cursor: pointer;\r\n    background-color: white;\r\n    border-radius: 3px;\n}\nlabel #btn[data-v-798ca618] {\r\n    left: 150px;\r\n    font-size: 35px;\r\n    padding: 6px 12px;\r\n    transition: all 0.5s;\n}\r\n\r\n/* label #close {\r\n    z-index: 1111;\r\n    left: 215px;\r\n    font-size: 30px;\r\n    color: white;\r\n    padding: 4px 9px;\r\n} */\r\n\r\n/* #open:checked ~ .sidebar {\r\n    left: 0;\r\n    left: 250px;\r\n    opacity: 0;\r\n    pointer-events: none;\r\n}} */\n#open:checked ~ #btn[data-v-798ca618] {\r\n    left: 250px;\r\n    opacity: 0;\r\n    pointer-events: none;\n}\n#check:checked ~ .sidebar[data-v-798ca618] {\r\n    left: 0;\n}\n.m-b-md[data-v-798ca618] {\r\n    margin-bottom: 30px;\n}\n*[data-v-798ca618] {\r\n    margin: 0px;\r\n    padding: 0px;\n}\r\n", ""]);
+exports.push([module.i, "\n*[data-v-798ca618] {\r\n    margin: 0;\r\n    padding: 0;\n}\n.logo[data-v-798ca618] {\r\n    margin-left: 5px;\r\n    height: 64px;\r\n    width: 64px;\r\n    vertical-align: top;\n}\n.sidebar[data-v-798ca618] {\r\n    position: fixed;\r\n    left: 0px;\r\n    width: 255px;\r\n    height: 100%;\r\n    background-color: #222425;\r\n    transition: all 0.5s ease;\n}\n.sidebar header[data-v-798ca618] {\r\n    font-size: 22px;\r\n    color: white;\r\n    text-align: center;\r\n    line-height: 70px;\r\n    margin-bottom: 40px;\r\n    -webkit-user-select: none;\r\n       -moz-user-select: none;\r\n        -ms-user-select: none;\r\n            user-select: none;\n}\n.sidebar ul a[data-v-798ca618] {\r\n    list-style: none;\r\n    text-decoration: none;\r\n    display: block;\r\n    height: 100%;\r\n    width: 100%;\r\n    line-height: 65px;\r\n    font-size: 20px;\r\n    padding-left: 40px;\r\n    font-weight: 200;\r\n    font-family: \"Karla\", sans-serif;\r\n    color: white;\r\n    box-sizing: border-box;\r\n    border-bottom: 1px solid rgba(51, 43, 43, 0.432);\r\n    transition: 0.4s;\n}\n#sidebar.active[data-v-798ca618] {\r\n    left: 0;\n}\nul li:hover a[data-v-798ca618] {\r\n    padding-left: 40px;\r\n    border-left: 5px solid #4aa0e6;\r\n    background-color: #283944;\n}\n#check[data-v-798ca618],\r\n#open[data-v-798ca618] {\r\n    display: none;\n}\nlabel #btn[data-v-798ca618],\r\nlabel #close[data-v-798ca618] {\r\n    position: absolute;\r\n    cursor: pointer;\r\n    background-color: white;\r\n    border-radius: 3px;\n}\nlabel #btn[data-v-798ca618] {\r\n    left: 150px;\r\n    font-size: 35px;\r\n    padding: 6px 12px;\r\n    transition: all 0.5s;\n}\r\n\r\n/* label #close {\r\n    z-index: 1111;\r\n    left: 215px;\r\n    font-size: 30px;\r\n    color: white;\r\n    padding: 4px 9px;\r\n} */\r\n\r\n/* #open:checked ~ .sidebar {\r\n    left: 0;\r\n    left: 250px;\r\n    opacity: 0;\r\n    pointer-events: none;\r\n}} */\n#open:checked ~ #btn[data-v-798ca618] {\r\n    left: 250px;\r\n    opacity: 0;\r\n    pointer-events: none;\n}\n#check:checked ~ .sidebar[data-v-798ca618] {\r\n    left: 0;\n}\n.m-b-md[data-v-798ca618] {\r\n    margin-bottom: 30px;\n}\n*[data-v-798ca618] {\r\n    margin: 0px;\r\n    padding: 0px;\n}\r\n", ""]);
 
 // exports
 
@@ -40394,82 +40395,103 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "album py-5 bg-light" }, [
-    _c("div", { staticClass: "container" }, [
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-4" }, [
+  return _c("div", { staticClass: "container" }, [
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "aja col-md-12 shadow p-3 mb-5" }, [
+        _c("iframe", {
+          attrs: {
+            width: "1100",
+            height: "500",
+            src: _vm.movie.link_trailer,
+            frameborder: "0",
+            allow:
+              "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
+            allowfullscreen: ""
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "contenido row" }, [
+        _c("div", { staticClass: "img" }, [
           _vm.movie.image
             ? _c("img", {
-                staticClass: "card-img-top",
+                staticClass: "img-top",
                 attrs: { src: _vm.movie.image }
               })
             : _vm._e()
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-8" }, [
+        _c("div", { staticClass: "this col-md-7" }, [
+          _c("h1", { staticClass: "shadow p-3 mb-5" }, [
+            _vm._v(
+              "\n                    " +
+                _vm._s(this.movie.title) +
+                "\n                "
+            )
+          ]),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c("h4", [_vm._v("Descripción")]),
+          _vm._v(" "),
+          _c("p", [_vm._v(_vm._s(_vm.movie.description))]),
+          _vm._v(" "),
           _c("div", { staticClass: "row" }, [
-            _c("div", { staticClass: "col-md-12" }, [
-              _c("h2", [_vm._v(_vm._s(this.movie.title))]),
+            _c("div", { staticClass: "col-md-3" }, [
+              _c(
+                "span",
+                { staticClass: "meta-title badge badge-pill badge-info" },
+                [_vm._v("Release Date:")]
+              ),
+              _c("br"),
               _vm._v(" "),
-              _c("hr"),
+              _c("span", { staticClass: "meta-text" }, [
+                _vm._v(_vm._s(_vm.movie.launcher))
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-7" }, [
+              _c(
+                "span",
+                { staticClass: "meta-title badge badge-pill badge-info" },
+                [_vm._v("Category:")]
+              ),
               _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c("div", { staticClass: "col-md-3" }, [
-                  _c("span", { staticClass: "meta-title" }, [
-                    _vm._v("Release Date:")
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "meta-text" }, [
-                    _vm._v(_vm._s(_vm.movie.launcher))
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-3" }, [
-                  _c("span", { staticClass: "meta-title" }, [
-                    _vm._v("Category:")
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "meta-text" }, [
-                    _vm._v(_vm._s(_vm.movie.category))
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-3" }, [
-                  _c("span", { staticClass: "meta-title" }, [
-                    _vm._v("Rating:")
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "meta-text" }, [
-                    _vm._v(_vm._s(_vm.movie.rating))
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "col-md-3" }, [
-                  _c("span", { staticClass: "meta-title" }, [_vm._v("Cast:")]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "meta-text" }, [
-                    _vm._v(_vm._s(_vm.movie.cast))
-                  ])
-                ])
-              ]),
+              _c("br"),
               _vm._v(" "),
-              _c("hr"),
+              _c("span", { staticClass: "meta-text" }, [
+                _vm._v(_vm._s(_vm.movie.category))
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3" }, [
+              _c(
+                "span",
+                { staticClass: "meta-title badge badge-pill badge-info" },
+                [_vm._v("Rating:")]
+              ),
+              _c("br"),
               _vm._v(" "),
-              _c("p", [_vm._v(_vm._s(_vm.movie.description))])
+              _c("span", { staticClass: "meta-text" }, [
+                _vm._v(_vm._s(_vm.movie.rating))
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-md-3" }, [
+              _c(
+                "span",
+                { staticClass: "meta-title badge badge-pill badge-info" },
+                [_vm._v("Cast:")]
+              ),
+              _c("br"),
+              _vm._v(" "),
+              _c("span", { staticClass: "meta-text" }, [
+                _vm._v(_vm._s(_vm.movie.cast))
+              ])
             ])
           ]),
           _vm._v(" "),
-          _c("iframe", {
-            attrs: {
-              width: "600",
-              height: "400",
-              src: _vm.movie.link_trailer,
-              frameborder: "0",
-              allow:
-                "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
-              allowfullscreen: ""
-            }
-          })
+          _c("hr")
         ])
       ])
     ])

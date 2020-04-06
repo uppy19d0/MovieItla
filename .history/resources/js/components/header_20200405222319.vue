@@ -123,7 +123,7 @@ export default {
 }
 
 ul li:hover a {
-    padding-left: 40px;
+    padding-left: 50px;
     border-left: 5px solid #4aa0e6;
     background-color: #283944;
 }
