@@ -20,7 +20,7 @@
                         v-if="movie.image"
                     />
                 </div>
-                <div class="this col-md-7">
+                <div class="this col-md-6">
                     <h1 class="shadow p-3 mb-5">
                         {{ this.movie.title }}
                     </h1>
@@ -66,7 +66,7 @@ export default {
     data() {
         return {
             movie: [],
-            errors: [],
+            errors: []
         };
     },
     created() {
@@ -75,13 +75,13 @@ export default {
     },
     methods: {
         fetchFilm(id) {
-            axios.get("http://localhost:8000/api/movie/" + id).then((res) => {
+            axios.get("http://localhost:8000/api/movie/" + id).then(res => {
                 console.log(res.data);
                 console.log(this.movie.link_trailer, "youtube");
                 this.movie = res.data;
             });
-        },
-    },
+        }
+    }
 };
 </script>
 
@@ -95,7 +95,12 @@ export default {
 
 .contenido {
     background-color: #1e1b26;
-    width: 2000px;
+    width: 1800px;
+    margin: 0 -190px 0 -190px;
+}
+
+.contenido .img {
+    margin-left: 170px;
 }
 
 .aja {

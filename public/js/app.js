@@ -2244,7 +2244,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.errors = {};
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/send-main", this.fields).then(function (response) {
-        alert("Mensaje de solictud de colar nueva pleicula enviando!");
+        alert("Mensaje de solictud para colocar nueva pelicula!");
       })["catch"](function (error) {
         if (error.response.status === 422) {
           _this.errors = error.response.data.errors || {};
@@ -7731,7 +7731,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .formulario {\r\n    display: inline;\r\n} */\r\n/* .mapa {\r\n    /* justify-content: flex-end; \r\n    margin-right: 100px;\r\n} */\n.card-header[data-v-768395a5]{\r\n    color:cornsilk\n}\n.screen[data-v-768395a5] {\r\n    margin-left: 280px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px 0 0 60px;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5] {\r\n    margin-left: 550px;\r\n    margin-top: -485px;\r\n    margin-bottom: 200px;\n}\n.rrss[data-v-768395a5] {\r\n    margin-left: 15px;\r\n    background-color: #222425;\r\n    width: 601px;\n}\n.botones[data-v-768395a5] {\r\n    background-color: white;\r\n    border-radius: 5px;\n}\n.botones img[data-v-768395a5] {\r\n    padding-left: 10px;\n}\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .formulario {\r\n    display: inline;\r\n} */\r\n/* .mapa {\r\n    /* justify-content: flex-end; \r\n    margin-right: 100px;\r\n} */\n.card-header[data-v-768395a5] {\r\n    color: cornsilk;\n}\n.screen[data-v-768395a5] {\r\n    margin-left: 280px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px 0 0 60px;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5] {\r\n    margin-left: 550px;\r\n    margin-top: -485px;\r\n    margin-bottom: 200px;\n}\n.rrss[data-v-768395a5] {\r\n    margin-left: 15px;\r\n    background-color: #222425;\r\n    width: 601px;\n}\n.botones[data-v-768395a5] {\r\n    background-color: white;\r\n    border-radius: 5px;\n}\n.botones img[data-v-768395a5] {\r\n    padding-left: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -7769,7 +7769,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.container[data-v-742d4c48] {\r\n    background-color: #1e1b26;\r\n    height: 800px;\r\n    width: 2900px;\r\n    color: white;\n}\n.contenido[data-v-742d4c48] {\r\n    background-color: #1e1b26;\r\n    width: 2000px;\n}\n.aja[data-v-742d4c48] {\r\n    margin-top: 30px;\r\n    background-color: #201d27;\n}\n.row img[data-v-742d4c48] {\r\n    margin-left: 30px;\r\n    margin-bottom: 100px;\r\n    height: 400px;\r\n    width: 300px;\n}\n.img[data-v-742d4c48],\r\n.this[data-v-742d4c48] {\r\n    display: inline;\n}\n.this[data-v-742d4c48] {\r\n    margin-top: 40px;\r\n    margin-left: 100px;\n}\n.card[data-v-742d4c48] {\r\n    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px;\n}\n.commenter-name[data-v-742d4c48] {\r\n    font-weight: bold;\n}\nspan.moment-ago[data-v-742d4c48] {\r\n    font-style: italic;\n}\r\n", ""]);
+exports.push([module.i, "\n.container[data-v-742d4c48] {\r\n    background-color: #1e1b26;\r\n    height: 800px;\r\n    width: 2900px;\r\n    color: white;\n}\n.contenido[data-v-742d4c48] {\r\n    background-color: #1e1b26;\r\n    width: 1800px;\r\n    margin: 0 -190px 0 -190px;\n}\n.contenido .img[data-v-742d4c48] {\r\n    margin-left: 170px;\n}\n.aja[data-v-742d4c48] {\r\n    margin-top: 30px;\r\n    background-color: #201d27;\n}\n.row img[data-v-742d4c48] {\r\n    margin-left: 30px;\r\n    margin-bottom: 100px;\r\n    height: 400px;\r\n    width: 300px;\n}\n.img[data-v-742d4c48],\r\n.this[data-v-742d4c48] {\r\n    display: inline;\n}\n.this[data-v-742d4c48] {\r\n    margin-top: 40px;\r\n    margin-left: 100px;\n}\n.card[data-v-742d4c48] {\r\n    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 20px;\n}\n.commenter-name[data-v-742d4c48] {\r\n    font-weight: bold;\n}\nspan.moment-ago[data-v-742d4c48] {\r\n    font-style: italic;\n}\r\n", ""]);
 
 // exports
 
@@ -40536,7 +40536,7 @@ var render = function() {
             : _vm._e()
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "this col-md-7" }, [
+        _c("div", { staticClass: "this col-md-6" }, [
           _c("h1", { staticClass: "shadow p-3 mb-5" }, [
             _vm._v(
               "\n                    " +
@@ -54454,8 +54454,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\laragon\www\MovieItla\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\laragon\www\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

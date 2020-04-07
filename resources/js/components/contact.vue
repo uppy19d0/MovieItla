@@ -86,9 +86,7 @@ export default {
             axios
                 .post("/send-main", this.fields)
                 .then(response => {
-                    alert(
-                        "Mensaje de solictud de colar nueva pleicula enviando!"
-                    );
+                    alert("Mensaje de solictud para colocar nueva pelicula!");
                 })
                 .catch(error => {
                     if (error.response.status === 422) {
@@ -108,8 +106,8 @@ export default {
     /* justify-content: flex-end; 
     margin-right: 100px;
 } */
-.card-header{
-    color:cornsilk
+.card-header {
+    color: cornsilk;
 }
 .screen {
     margin-left: 280px;
