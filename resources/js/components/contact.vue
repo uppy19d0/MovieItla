@@ -108,6 +108,9 @@ export default {
     /* justify-content: flex-end; 
     margin-right: 100px;
 } */
+.card-header{
+    color:cornsilk
+}
 .screen {
     margin-left: 280px;
 }

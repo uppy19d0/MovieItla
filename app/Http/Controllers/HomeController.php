@@ -37,15 +37,14 @@ class HomeController extends Controller
     public function sendMail(Request $request)
     {
        
-    $data['title'] =  $request->input('name');
-    // $data["subject"] = $request->input('pelicula');
-    $data["mail_text"] = $request->input('message');
+    $data['title'] = "Solicitud para añadir pelicula";
+    $pelicula= $request->input('pelicula');
+    $name= $request->input('name');
+    $description= $request->input('message');
 
-    Mail::send('emails.email', $data, function($message) {
+    Mail::send('emails.email', $data, function($message) use ($pelicula,$description,$name) {
 
-        $message->to('luisaneuris60@gmail.com', 'Receiver Name')
-
-       ->subject('noses');
+        $message->to('luisaneuris60@gmail.com', 'Receiver Name')->subject("La Persona ${name},solicitud esta pelicula ${pelicula} esta son alguna de la descripciones ${description}");
 
     });
     }

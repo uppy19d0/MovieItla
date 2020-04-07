@@ -2667,25 +2667,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 // const btnToggle = document.querySelector(".btn");
 // btnToggle.addEventListener("click", function () {
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -2746,20 +2727,6 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -7764,7 +7731,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .formulario {\r\n    display: inline;\r\n} */\r\n/* .mapa {\r\n    /* justify-content: flex-end; \r\n    margin-right: 100px;\r\n} */\n.screen[data-v-768395a5] {\r\n    margin-left: 280px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px 0 0 60px;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5] {\r\n    margin-left: 550px;\r\n    margin-top: -485px;\r\n    margin-bottom: 200px;\n}\n.rrss[data-v-768395a5] {\r\n    margin-left: 15px;\r\n    background-color: #222425;\r\n    width: 601px;\n}\n.botones[data-v-768395a5] {\r\n    background-color: white;\r\n    border-radius: 5px;\n}\n.botones img[data-v-768395a5] {\r\n    padding-left: 10px;\n}\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .formulario {\r\n    display: inline;\r\n} */\r\n/* .mapa {\r\n    /* justify-content: flex-end; \r\n    margin-right: 100px;\r\n} */\n.card-header[data-v-768395a5]{\r\n    color:cornsilk\n}\n.screen[data-v-768395a5] {\r\n    margin-left: 280px;\n}\nform[data-v-768395a5] {\r\n    margin: 90px 0 0 60px;\r\n    padding: 50px;\r\n    color: black;\r\n    width: 400px;\r\n    border-radius: 5px;\r\n    background-color: white;\r\n    font-size: 16px;\n}\n.campo[data-v-768395a5] {\r\n    margin-top: 7px;\r\n    margin-bottom: 7px;\r\n    border: 0;\r\n    outline: none;\r\n    border-bottom: solid 2px #ccc;\r\n    padding: 9px;\r\n    width: 280px;\n}\n.container[data-v-768395a5] {\r\n    margin-left: 550px;\r\n    margin-top: -485px;\r\n    margin-bottom: 200px;\n}\n.rrss[data-v-768395a5] {\r\n    margin-left: 15px;\r\n    background-color: #222425;\r\n    width: 601px;\n}\n.botones[data-v-768395a5] {\r\n    background-color: white;\r\n    border-radius: 5px;\n}\n.botones img[data-v-768395a5] {\r\n    padding-left: 10px;\n}\r\n", ""]);
 
 // exports
 
@@ -40735,10 +40702,6 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("li", [
-                _c("a", { attrs: { href: "#" } }, [_vm._v("Categorias")])
-              ]),
-              _vm._v(" "),
-              _c("li", [
                 _c(
                   "a",
                   { attrs: { href: "http://localhost:8000/header/contact" } },
@@ -40858,9 +40821,7 @@ var render = function() {
                 _vm._s(_vm.title) +
                 "\n                "
             )
-          ]),
-          _vm._v(" "),
-          _vm._m(0)
+          ])
         ]),
         _vm._v(" "),
         _c(
@@ -41024,24 +40985,7 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "buscador" }, [
-      _c("input", {
-        staticClass: "buscar",
-        attrs: { type: "search", name: "", id: "", placeholder: "Buscar" }
-      }),
-      _vm._v(" "),
-      _c("input", {
-        staticClass: "imagen",
-        attrs: { type: "image", src: "/assets/buscarr.png" }
-      })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -54510,8 +54454,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\laragon\www\MovieItla\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\laragon\www\MovieItla\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
