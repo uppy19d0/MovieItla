@@ -19,6 +19,24 @@
                                 {{ errors.title[0] }}
                             </div>
                         </div>
+                         <div class="form-group">
+                            <label for="Movie Category"
+                                >Movie Category</label
+                            >
+                            <textarea
+                                type="text"
+                                class="form-control"
+                                :class="errors.category ? 'is-invalid' : ''"
+                                placeholder="Movie Category"
+                                v-model="movie.category"
+                            ></textarea>
+                            <div
+                                class="invalid-feedback"
+                                v-if="errors.description"
+                            >
+                                {{ errors.description[0] }}
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="Movie Description"
                                 >Movie Description</label
